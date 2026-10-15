@@ -24,6 +24,16 @@ function save() { try { localStorage.setItem(LS_KEY, JSON.stringify(store)) } ca
 function saveUI() { try { localStorage.setItem(UI_KEY, JSON.stringify(ui)) } catch {} }
 
 /* ---------- fotos ---------- */
+/* Si una foto falla: reintenta sin tamaño, luego directo del sitio (sin CDN), luego muestra el respaldo. */
+function fallbacks(url) {
+  const plain = url.replace("https://questying.files.wordpress.com/", "https://questying.wordpress.com/wp-content/uploads/").split("?")[0];
+  const direct = plain.replace(/^https:\/\/i\d\.wp\.com\//, "https://");
+  return [...new Set([plain, direct])];
+}
+function withRetry(img, url, onFail) {
+  const list = fallbacks(url); let k = 0;
+  img.onerror = () => { if (k < list.length) img.src = list[k++]; else onFail() };
+}
 function sized(url, w) {
   if (!url) return url;
   url = url.replace("https://questying.files.wordpress.com/", "https://questying.wordpress.com/wp-content/uploads/");
@@ -149,7 +159,8 @@ function card(it, showGroup) {
     <span class="rk">${esc(CAT.rarity[it.rarity].label)}</span></div></a>`;
   if (LOCAL_PHOTOS.has(it.id)) idb.get(it.id).then(b => { if (b) { const i = new Image(); i.alt = ""; i.src = URL.createObjectURL(b); $(".thumb", c).replaceChildren(i) } });
   $(".open", c).addEventListener("click", () => { fromList = true });
-  const img = $(".thumb img", c); if (img) img.onerror = () => img.replaceWith(Object.assign(el("span", "ph"), { textContent: it.name.slice(0, 1) }));
+  const img = $(".thumb img", c);
+  if (img && !REPO_PHOTOS[it.id]) withRetry(img, it.img, () => img.replaceWith(Object.assign(el("span", "ph"), { textContent: it.name.slice(0, 1) })));
   if (it.total) {
     const ctr = el("div", "ctr");
     ctr.innerHTML = `<button type="button" aria-label="Quitar uno de ${esc(it.name)}">−</button><output>${h}/${it.total}</output><button type="button" aria-label="Sumar uno a ${esc(it.name)}">+</button>`;
@@ -208,7 +219,7 @@ async function drawSheet() {
     <div class="sh-top"><div><div class="crumb">${esc(cat.name)} · ${esc(it.group)}</div><h2 id="sh-t">${esc(it.name)}</h2></div><button class="x" type="button" aria-label="Cerrar ficha">✕</button></div>
     ${mine && it.img ? `<div class="photo-tabs" role="group" aria-label="Foto"><button type="button" data-v="mine" aria-pressed="${view === "mine"}">Mi foto</button><button type="button" data-v="cat" aria-pressed="${view === "cat"}">Catálogo</button></div>` : ""}
     <div class="photo">${srcImg ? `<img alt="${esc(it.name)}" src="${esc(srcImg)}">` : `<div class="ph">Aún no hay foto de esta pieza.<br>Mira ventas reales en eBay o agrega la tuya abajo.</div>`}</div>
-    ${view === "cat" && it.img ? `<div class="credit">Foto: <a href="${esc(it.imgSrc)}" target="_blank" rel="noopener">That Penguin Game</a></div>` : ""}
+    ${view === "cat" && it.img ? `<div class="credit">Foto: <a href="${esc(it.imgSrc)}" target="_blank" rel="noopener">That Penguin Game</a>${it.imgShared ? ` · Es la misma foto que ${esc(it.imgShared.join(", "))}: el relanzamiento es idéntico y solo cambia la etiqueta o la moneda.` : ""}</div>` : ""}
     ${it.desc ? `<p>${esc(it.desc)}</p>` : ""}
     ${it.note ? `<p><b>${esc(it.note)}.</b></p>` : ""}
     <dl class="facts">
@@ -246,7 +257,9 @@ async function drawSheet() {
   bg.querySelectorAll("[data-v]").forEach(b => b.onclick = () => { photoView = b.dataset.v; drawSheet() });
   bg.querySelectorAll("[data-b]").forEach(b => b.onclick = () => bump(it, +b.dataset.b));
   const own = $("#own", bg); if (own) own.onclick = () => setOwned(it, h ? null : { have: true });
-  const pimg = $(".photo img", bg); if (pimg) pimg.onerror = () => { $(".photo", bg).innerHTML = `<div class="ph">La foto no cargó. Revisa tu conexión o abre la fuente.</div>` };
+  const pimg = $(".photo img", bg);
+  const failMsg = () => { $(".photo", bg).innerHTML = `<div class="ph">La foto no cargó. Revisa tu conexión o abre la fuente.</div>` };
+  if (pimg) { if (view === "cat" && it.img) withRetry(pimg, it.img, failMsg); else pimg.onerror = failMsg }
   let tm; const saveNote = () => { clearTimeout(tm); tm = setTimeout(() => {
     const n = { price: $("#f-price", bg).value.trim(), date: $("#f-date", bg).value, note: $("#f-note", bg).value.trim() };
     if (n.price || n.date || n.note) store.notes[it.id] = n; else delete store.notes[it.id]; save();
