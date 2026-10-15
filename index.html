@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Iglú de Colección</title>
+<meta name="description" content="Catálogo y tracker personal del merch oficial de Club Penguin.">
+<meta name="theme-color" content="#1c74c9" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0b1724" media="(prefers-color-scheme: dark)">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&family=Nunito+Sans:opsz,wght@6..12,400;6..12,700;6..12,800&family=JetBrains+Mono:wght@500&display=swap">
+<link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+<header class="top">
+  <div class="top-in">
+    <div class="brand">
+      <h1>Iglú de Colección</h1>
+      <button class="icon-btn" id="menuBtn" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Respaldo y ajustes">⋯</button>
+    </div>
+    <div class="prog" aria-live="polite">
+      <div class="prog-num"><strong id="pct">0%</strong><span id="progTxt">0 de 0</span></div>
+      <div class="bar"><i id="bar"></i></div>
+    </div>
+    <div class="search">
+      <input id="q" type="search" placeholder="Buscar: rockhopper, puffle rosa, series 7…" autocomplete="off" aria-label="Buscar en el catálogo">
+      <span class="kbd" aria-hidden="true">/</span>
+    </div>
+    <nav class="chips" id="cats" aria-label="Categorías"></nav>
+    <div class="filters">
+      <div class="seg" role="group" aria-label="Estado">
+        <button type="button" data-own="all" aria-pressed="true">Todo</button>
+        <button type="button" data-own="have" aria-pressed="false">Tengo</button>
+        <button type="button" data-own="miss" aria-pressed="false">Me faltan</button>
+      </div>
+      <select id="rar" aria-label="Rareza">
+        <option value="">Toda rareza</option>
+        <option value="c">Común</option><option value="p">Poco común</option><option value="r">Raro</option><option value="m">Muy raro</option><option value="x">Inconseguible</option>
+        <option value="r+">Raro o más</option>
+      </select>
+      <select id="sort" aria-label="Orden">
+        <option value="cat">Orden del catálogo</option>
+        <option value="az">A–Z</option>
+        <option value="rar">Más raros primero</option>
+      </select>
+    </div>
+  </div>
+</header>
+
+<div class="menu" id="menu" hidden>
+  <button type="button" id="exportBtn">Exportar mi colección (.json)</button>
+  <label class="file-btn">Importar respaldo…<input type="file" id="importFile" accept="application/json,.json"></label>
+  <button type="button" id="aboutBtn">Acerca de y créditos</button>
+</div>
+
+<main id="main" class="main" tabindex="-1">
+  <p class="loading">Cargando catálogo…</p>
+</main>
+
+<div class="toast" id="toast" role="status" hidden></div>
+
+<template id="aboutTpl">
+  <h2>Acerca de</h2>
+  <p>Tracker personal del merch oficial de Club Penguin (Jakks Pacific, Topps, Disney y otros, 2008–2013). Tu progreso se guarda en este dispositivo; usa <b>Exportar</b> e <b>Importar</b> para pasarlo entre el celular y el PC.</p>
+  <p>Las fotos del catálogo se muestran enlazadas desde <a href="https://thatpenguingame.com/club-penguin-toys/" target="_blank" rel="noopener">That Penguin Game</a> y siguen siendo de sus autores. Tus propias fotos las reemplazan.</p>
+  <p>La rareza es una estimación según tirada, canal de venta y si llegó a venderse. Úsala como guía, no como precio.</p>
+  <p>Club Penguin es una marca de Disney. Este proyecto es un catálogo de fans sin fines comerciales.</p>
+</template>
+
+<script src="js/app.js" defer></script>
+</body>
+</html>
