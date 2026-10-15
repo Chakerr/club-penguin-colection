@@ -167,3 +167,14 @@ button,input,select{font:inherit;color:inherit}
 .ov-info{padding:12px 14px 14px;display:flex;flex-direction:column;gap:5px}
 .ov-info strong{font:800 19px/1.1 var(--display)}
 .ov-info>span{font-size:12.5px;color:var(--muted)}
+
+/* moneda con código */
+.meta-row{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.coin{font-size:10.5px;font-weight:800;color:var(--muted);letter-spacing:.02em}
+.coin.on{color:#b8860b}
+@media (prefers-color-scheme:dark){.coin.on{color:#f0c040}}
+.coinset{border:1px solid var(--line);border-radius:12px;padding:10px 12px;display:flex;flex-direction:column;gap:6px;margin:0;min-width:0}
+.coinset legend{font-size:12px;font-weight:800;color:var(--muted);padding:0 4px}
+.chkline{flex-direction:row!important;align-items:center;gap:8px!important;font-size:14px!important;color:var(--ink)!important}
+.chkline input{width:20px!important;height:20px;accent-color:var(--have)}
+.coinset small{font-size:12px;color:var(--muted);line-height:1.4}

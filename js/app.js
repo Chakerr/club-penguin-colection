@@ -65,6 +65,7 @@ async function shrink(file, max = 1400) {
 }
 
 /* ---------- progreso ---------- */
+const hasCoin = it => !!store.notes[it.id]?.coin;
 const weight = it => it.total || 1;
 function have(it) { const o = store.owned[it.id]; if (!o) return 0; return it.total ? Math.min(o.n || 0, it.total) : 1 }
 const complete = it => have(it) >= weight(it);
@@ -91,7 +92,7 @@ function visible() {
   const toks = tokens(query);
   return CAT.items.filter(it =>
     (ui.cat === "all" || it.cat === ui.cat) &&
-    (ui.own === "all" || (ui.own === "have" ? have(it) > 0 : !complete(it))) &&
+    (ui.own === "all" || (ui.own === "have" ? have(it) > 0 : ui.own === "nocoin" ? (it.coin && have(it) > 0 && !hasCoin(it)) : !complete(it))) &&
     (!ui.rar || (ui.rar === "r+" ? RANK[it.rarity] >= 2 : it.rarity === ui.rar)) &&
     matches(it, toks));
 }
@@ -107,7 +108,8 @@ function render() {
   const [g, t] = sum(CAT.items);
   const pct = t ? Math.round(g / t * 1000) / 10 : 0;
   $("#pct").textContent = pct + "%"; $("#bar").style.width = pct + "%";
-  $("#progTxt").textContent = `${g.toLocaleString("es")} de ${t.toLocaleString("es")} · ${(n => `${n} ${n === 1 ? "artículo" : "artículos"}`)(CAT.items.filter(i => have(i) > 0).length)}`;
+  const owned = CAT.items.filter(i => have(i) > 0), coinOwned = owned.filter(i => i.coin);
+  $("#progTxt").textContent = `${(n => `${n} ${n === 1 ? "artículo" : "artículos"}`)(owned.length)} de ${CAT.items.length}` + (coinOwned.length ? ` · monedas ${coinOwned.filter(hasCoin).length}/${coinOwned.length}` : "");
 
   const nav = $("#cats"); nav.textContent = "";
   [{ id: "all", name: "Inicio" }, ...CAT.categories].forEach(c => {
@@ -205,7 +207,7 @@ function card(it, mode) {
     <div class="thumb">${src ? `<img loading="lazy" decoding="async" alt="" src="${esc(src)}">` : ""}<span class="tag">${esc(shortGroup(it.group))}</span></div>
     <div class="info"><span class="nm">${esc(it.name)}</span>${sub ? `<span class="sub">${esc(sub)}</span>` : ""}
     ${it.total ? `<div class="mini"><i style="width:${h / it.total * 100}%"></i></div>` : ""}
-    <span class="rk">${esc(CAT.rarity[it.rarity].label)}</span></div></a>`;
+    <span class="meta-row"><span class="rk">${esc(CAT.rarity[it.rarity].label)}</span>${it.coin ? `<span class="coin ${hasCoin(it) ? "on" : ""}" title="${hasCoin(it) ? "Tienes la moneda" : "Venía con moneda con código"}">${hasCoin(it) ? "● Moneda" : "○ Moneda"}</span>` : ""}</span></div></a>`;
   const thumb = $(".thumb", c);
   if (!src && !LOCAL_PHOTOS.has(it.id)) thumb.prepend(placeholder(it));
   if (LOCAL_PHOTOS.has(it.id)) idb.get(it.id).then(b => { if (b) { const i = new Image(); i.alt = ""; i.src = URL.createObjectURL(b); thumb.prepend(i) } });
@@ -292,7 +294,12 @@ async function drawSheet() {
       <h3>Mi registro</h3>
       <label>Precio pagado<input id="f-price" inputmode="decimal" placeholder="ej. 25 USD" value="${esc(note.price)}"></label>
       <label>Fecha de compra<input id="f-date" type="date" value="${esc(note.date)}"></label>
-      <label class="full">Notas<textarea id="f-note" placeholder="Vendedor, estado, si trae la moneda…">${esc(note.note)}</textarea></label>
+      ${it.coin ? `<fieldset class="full coinset"><legend>Moneda con código</legend>
+        <label class="chkline"><input type="checkbox" id="f-coin" ${note.coin ? "checked" : ""}> Tengo la moneda</label>
+        <label class="chkline"><input type="checkbox" id="f-unused" ${note.unused ? "checked" : ""} ${note.coin ? "" : "disabled"}> El código está sin usar</label>
+        <small>Esta pieza venía con una moneda dorada de plástico con un código para el juego. Con la moneda, y más aún con el código sin raspar ni usar, la pieza vale más.</small>
+      </fieldset>` : ""}
+      <label class="full">Notas<textarea id="f-note" placeholder="Vendedor, estado, detalles del empaque…">${esc(note.note)}</textarea></label>
       <label class="full">Mi foto
         <span style="display:flex;gap:8px;flex-wrap:wrap"><span class="btn" role="button" tabindex="0" id="addPhoto">${localBlob ? "Cambiar mi foto" : "Agregar foto"}</span>${localBlob ? `<button type="button" class="btn" id="delPhoto">Quitar mi foto</button>` : ""}</span>
         <input type="file" id="photoFile" accept="image/*" hidden>
@@ -311,11 +318,19 @@ async function drawSheet() {
   const pimg = $(".photo img", bg);
   const failMsg = () => { $(".photo", bg).innerHTML = `<div class="ph">La foto no cargó. Revisa tu conexión o abre la fuente.</div>` };
   if (pimg) { if (view === "cat" && it.img) withRetry(pimg, it.img, failMsg); else pimg.onerror = failMsg }
-  let tm; const saveNote = () => { clearTimeout(tm); tm = setTimeout(() => {
+  let tm; const saveNow = () => {
     const n = { price: $("#f-price", bg).value.trim(), date: $("#f-date", bg).value, note: $("#f-note", bg).value.trim() };
-    if (n.price || n.date || n.note) store.notes[it.id] = n; else delete store.notes[it.id]; save();
+    if ($("#f-coin", bg)) { n.coin = $("#f-coin", bg).checked; n.unused = n.coin && $("#f-unused", bg).checked }
+    if (n.price || n.date || n.note || n.coin) store.notes[it.id] = n; else delete store.notes[it.id]; save() };
+  const saveNote = () => { clearTimeout(tm); tm = setTimeout(() => {
+    const n = { price: $("#f-price", bg).value.trim(), date: $("#f-date", bg).value, note: $("#f-note", bg).value.trim() };
+    if ($("#f-coin", bg)) { n.coin = $("#f-coin", bg).checked; n.unused = n.coin && $("#f-unused", bg).checked }
+    if (n.price || n.date || n.note || n.coin) store.notes[it.id] = n; else delete store.notes[it.id]; save();
   }, 400) };
   ["#f-price", "#f-date", "#f-note"].forEach(s => $(s, bg).addEventListener("input", saveNote));
+  const fc = $("#f-coin", bg), fu = $("#f-unused", bg);
+  if (fc) { fc.addEventListener("change", () => { fu.disabled = !fc.checked; if (!fc.checked) fu.checked = false; clearTimeout(tm); saveNow(); render() });
+    fu.addEventListener("change", () => { clearTimeout(tm); saveNow(); render() }) }
   $("#mineForm", bg).addEventListener("submit", e => e.preventDefault());
   const file = $("#photoFile", bg), add = $("#addPhoto", bg);
   add.onclick = () => file.click(); add.onkeydown = e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); file.click() } };

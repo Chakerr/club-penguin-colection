@@ -117,6 +117,10 @@
      "note": "Tamaño grande, vendidos sobre todo en parques Disney."
     },
     {
+     "name": "Peluches de 9\"",
+     "note": "Versión más grande de los personajes, vendida en Disney Store y otras tiendas."
+    },
+    {
      "name": "Especiales y no lanzados",
      "note": null
     }
@@ -215,7 +219,7 @@
   {
    "id": "keychains",
    "name": "Llaveros y clips",
-   "note": "Puffles de peluche de 2\" con argolla o clip para llaves o mochila. Jakks Pacific.",
+   "note": "Puffles de peluche de 2\". Los clip-on traían moneda con código y salieron por series, como los peluches; los de argolla venían sin moneda.",
    "info": {
     "what": "Llavero de puffle de peluche de unos 2\" (5 cm), con argolla o clip para llaves o mochila.",
     "maker": "Jakks Pacific / Disney",
@@ -225,12 +229,24 @@
    },
    "groups": [
     {
-     "name": "Llaveros puffle (2\")",
-     "note": null
+     "name": "Clip-on Serie 1",
+     "note": "Puffle de 2\" con clip de mosquetón y moneda con código. Confirmado en listados: verde."
     },
     {
-     "name": "Clip-on",
-     "note": "Variante con clip en vez de argolla."
+     "name": "Clip-on Serie 2",
+     "note": "Misma pieza con empaque de la Serie 2. Confirmados en listados: naranja y blanco."
+    },
+    {
+     "name": "Clip-on (serie sin identificar)",
+     "note": "Colores vistos a la venta con moneda, sin la serie en el anuncio. Revisa el número en el cartón."
+    },
+    {
+     "name": "Llavero con argolla (2\")",
+     "note": "Versión con argolla metálica en vez de clip, vendida sin moneda."
+    },
+    {
+     "name": "Club Penguin GO",
+     "note": "Línea vista en listados de reventa: peluche con clip y puffle. Detalles sin confirmar."
     }
    ]
   },
@@ -301,6 +317,10 @@
     {
      "name": "Puffle World (1\")",
      "note": "Playsets con puffles de 1\" de figura dura."
+    },
+    {
+     "name": "Blind bags UK (2012)",
+     "note": "Sobre sorpresa con 1 pingüino, 1 puffle y 1 código. Exclusivo de la juguetería The Entertainer (Reino Unido)."
     },
     {
      "name": "No lanzados",
@@ -467,16 +487,16 @@
      "note": null
     },
     {
-     "name": "iBitz PowerKey",
-     "note": null
-    },
-    {
      "name": "Memorias USB",
      "note": null
     },
     {
      "name": "Figuras de vinilo",
      "note": null
+    },
+    {
+     "name": "Colaboraciones",
+     "note": "Productos de otras marcas que daban recompensas dentro de Club Penguin. No llevan el logo del juego."
     },
     {
      "name": "Borradores coleccionables",
@@ -487,9 +507,102 @@
  ],
  "items": [
   {
-   "id": "keychains-llaveros-puffle-2-black-puffle-llavero",
+   "id": "keychains-clip-on-serie-1-green-puffle-clip-on",
    "cat": "keychains",
-   "group": "Llaveros puffle (2\")",
+   "group": "Clip-on Serie 1",
+   "name": "Green Puffle clip-on",
+   "rarity": "p",
+   "desc": "Llavero de puffle de peluche de unos 2\" (5 cm), con argolla o clip para llaves o mochila.",
+   "coin": true
+  },
+  {
+   "id": "keychains-clip-on-serie-2-orange-puffle-clip-on",
+   "cat": "keychains",
+   "group": "Clip-on Serie 2",
+   "name": "Orange Puffle clip-on",
+   "rarity": "p",
+   "desc": "Llavero de puffle de peluche de unos 2\" (5 cm), con argolla o clip para llaves o mochila.",
+   "coin": true
+  },
+  {
+   "id": "keychains-clip-on-serie-2-white-puffle-clip-on",
+   "cat": "keychains",
+   "group": "Clip-on Serie 2",
+   "name": "White Puffle clip-on",
+   "rarity": "r",
+   "desc": "Llavero de puffle de peluche de unos 2\" (5 cm), con argolla o clip para llaves o mochila.",
+   "coin": true
+  },
+  {
+   "id": "keychains-clip-on-serie-sin-identificar-black-puffle-clip-on",
+   "cat": "keychains",
+   "group": "Clip-on (serie sin identificar)",
+   "name": "Black Puffle clip-on",
+   "rarity": "p",
+   "desc": "Llavero de puffle de peluche de unos 2\" (5 cm), con argolla o clip para llaves o mochila.",
+   "coin": true
+  },
+  {
+   "id": "keychains-clip-on-serie-sin-identificar-blue-puffle-clip-on",
+   "cat": "keychains",
+   "group": "Clip-on (serie sin identificar)",
+   "name": "Blue Puffle clip-on",
+   "rarity": "p",
+   "desc": "Llavero de puffle de peluche de unos 2\" (5 cm), con argolla o clip para llaves o mochila.",
+   "coin": true
+  },
+  {
+   "id": "keychains-clip-on-serie-sin-identificar-pink-puffle-clip-on",
+   "cat": "keychains",
+   "group": "Clip-on (serie sin identificar)",
+   "name": "Pink Puffle clip-on",
+   "rarity": "p",
+   "desc": "Llavero de puffle de peluche de unos 2\" (5 cm), con argolla o clip para llaves o mochila.",
+   "coin": true
+  },
+  {
+   "id": "keychains-clip-on-serie-sin-identificar-red-puffle-clip-on",
+   "cat": "keychains",
+   "group": "Clip-on (serie sin identificar)",
+   "name": "Red Puffle clip-on",
+   "rarity": "p",
+   "desc": "Llavero de puffle de peluche de unos 2\" (5 cm), con argolla o clip para llaves o mochila.",
+   "coin": true
+  },
+  {
+   "id": "keychains-clip-on-serie-sin-identificar-yellow-puffle-clip-on",
+   "cat": "keychains",
+   "group": "Clip-on (serie sin identificar)",
+   "name": "Yellow Puffle clip-on",
+   "rarity": "p",
+   "desc": "Llavero de puffle de peluche de unos 2\" (5 cm), con argolla o clip para llaves o mochila.",
+   "coin": true
+  },
+  {
+   "id": "keychains-clip-on-serie-sin-identificar-purple-puffle-clip-on",
+   "cat": "keychains",
+   "group": "Clip-on (serie sin identificar)",
+   "name": "Purple Puffle clip-on",
+   "rarity": "r",
+   "desc": "Llavero de puffle de peluche de unos 2\" (5 cm), con argolla o clip para llaves o mochila.",
+   "coin": true
+  },
+  {
+   "id": "keychains-clip-on-serie-sin-identificar-brown-puffle-clip-on",
+   "cat": "keychains",
+   "group": "Clip-on (serie sin identificar)",
+   "name": "Brown Puffle clip-on",
+   "rarity": "r",
+   "desc": "Llavero de puffle de peluche de unos 2\" (5 cm), con argolla o clip para llaves o mochila.",
+   "coin": true,
+   "img": "https://cdn11.bigcommerce.com/s-0kvv9/products/200835/images/283880/cliponpufflebrown__14402.1519947822.500.750.jpg?c=2",
+   "imgSrc": "https://toywiz.com/club-penguin-brown-puffle-2-inch-plush-clip-on/",
+   "imgBy": "ToyWiz"
+  },
+  {
+   "id": "keychains-llavero-con-argolla-2-black-puffle-llavero",
+   "cat": "keychains",
+   "group": "Llavero con argolla (2\")",
    "name": "Black Puffle llavero",
    "rarity": "c",
    "desc": "Llavero de puffle de peluche de unos 2\" (5 cm), con argolla o clip para llaves o mochila.",
@@ -498,9 +611,9 @@
    "imgBy": "ToyWiz"
   },
   {
-   "id": "keychains-llaveros-puffle-2-green-puffle-llavero",
+   "id": "keychains-llavero-con-argolla-2-green-puffle-llavero",
    "cat": "keychains",
-   "group": "Llaveros puffle (2\")",
+   "group": "Llavero con argolla (2\")",
    "name": "Green Puffle llavero",
    "rarity": "c",
    "desc": "Llavero de puffle de peluche de unos 2\" (5 cm), con argolla o clip para llaves o mochila.",
@@ -509,9 +622,9 @@
    "imgBy": "ToyWiz"
   },
   {
-   "id": "keychains-llaveros-puffle-2-red-puffle-llavero",
+   "id": "keychains-llavero-con-argolla-2-red-puffle-llavero",
    "cat": "keychains",
-   "group": "Llaveros puffle (2\")",
+   "group": "Llavero con argolla (2\")",
    "name": "Red Puffle llavero",
    "rarity": "c",
    "desc": "Llavero de puffle de peluche de unos 2\" (5 cm), con argolla o clip para llaves o mochila.",
@@ -520,50 +633,33 @@
    "imgBy": "ToyWiz"
   },
   {
-   "id": "keychains-llaveros-puffle-2-yellow-puffle-llavero",
+   "id": "keychains-llavero-con-argolla-2-yellow-puffle-llavero",
    "cat": "keychains",
-   "group": "Llaveros puffle (2\")",
+   "group": "Llavero con argolla (2\")",
    "name": "Yellow Puffle llavero",
-   "rarity": "p",
+   "rarity": "c",
    "desc": "Llavero de puffle de peluche de unos 2\" (5 cm), con argolla o clip para llaves o mochila.",
    "img": "https://cdn11.bigcommerce.com/s-0kvv9/products/141704/images/197337/pufflekeychainyellow__23925.1473960841.500.750.jpg?c=2",
    "imgSrc": "https://toywiz.com/club-penguin-yellow-puffle-plush-keychain/",
    "imgBy": "ToyWiz"
   },
   {
-   "id": "keychains-llaveros-puffle-2-orange-puffle-llavero",
+   "id": "keychains-club-penguin-go-ninja-negro-con-puffle-clip",
    "cat": "keychains",
-   "group": "Llaveros puffle (2\")",
-   "name": "Orange Puffle llavero",
-   "rarity": "p",
+   "group": "Club Penguin GO",
+   "name": "Ninja negro con puffle clip",
+   "rarity": "m",
+   "note": "Sin confirmar",
    "desc": "Llavero de puffle de peluche de unos 2\" (5 cm), con argolla o clip para llaves o mochila."
   },
   {
-   "id": "keychains-llaveros-puffle-2-purple-puffle-llavero",
+   "id": "keychains-club-penguin-go-cadence-rosa-con-puffle-clip",
    "cat": "keychains",
-   "group": "Llaveros puffle (2\")",
-   "name": "Purple Puffle llavero",
-   "rarity": "p",
+   "group": "Club Penguin GO",
+   "name": "Cadence rosa con puffle clip",
+   "rarity": "m",
+   "note": "Sin confirmar",
    "desc": "Llavero de puffle de peluche de unos 2\" (5 cm), con argolla o clip para llaves o mochila."
-  },
-  {
-   "id": "keychains-llaveros-puffle-2-white-puffle-llavero",
-   "cat": "keychains",
-   "group": "Llaveros puffle (2\")",
-   "name": "White Puffle llavero",
-   "rarity": "r",
-   "desc": "Llavero de puffle de peluche de unos 2\" (5 cm), con argolla o clip para llaves o mochila."
-  },
-  {
-   "id": "keychains-clip-on-brown-puffle-clip-on",
-   "cat": "keychains",
-   "group": "Clip-on",
-   "name": "Brown Puffle clip-on",
-   "rarity": "r",
-   "desc": "Llavero de puffle de peluche de unos 2\" (5 cm), con argolla o clip para llaves o mochila.",
-   "img": "https://cdn11.bigcommerce.com/s-0kvv9/products/200835/images/283880/cliponpufflebrown__14402.1519947822.500.750.jpg?c=2",
-   "imgSrc": "https://toywiz.com/club-penguin-brown-puffle-2-inch-plush-clip-on/",
-   "imgBy": "ToyWiz"
   },
   {
    "id": "plush-series-1-barista",
@@ -573,6 +669,7 @@
    "rarity": "c",
    "year": "oct. 2008 (lanzamiento de la línea)",
    "desc": "Peluche de pingüino de 6.5\" (unos 16 cm) con traje de tela; algunos tienen ropa removible.",
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2026/05/Series-1-Barista.jpg?resize=300%2C300&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -591,6 +688,7 @@
     "Standalone (sin número)",
     "Disney Parks / Jumbo"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2025/08/series-1-bumble-bee-updated.png?resize=304%2C324&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -606,6 +704,7 @@
    "versions": [
     "Series 3"
    ],
+   "coin": true,
    "img": "https://questying.files.wordpress.com/2024/01/series-1-cheerleader-red.jpg",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -618,6 +717,7 @@
    "rarity": "c",
    "year": "oct. 2008 (lanzamiento de la línea)",
    "desc": "Peluche de pingüino de 6.5\" (unos 16 cm) con traje de tela; algunos tienen ropa removible.",
+   "coin": true,
    "img": "https://questying.files.wordpress.com/2023/09/series-1-construction-worker-1.jpg?w=150",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -630,6 +730,7 @@
    "rarity": "c",
    "year": "oct. 2008 (lanzamiento de la línea)",
    "desc": "Peluche de pingüino de 6.5\" (unos 16 cm) con traje de tela; algunos tienen ropa removible.",
+   "coin": true,
    "img": "https://questying.files.wordpress.com/2024/01/series-1-reindeer-elf.png?w=118",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -649,6 +750,7 @@
     "Series 16",
     "Standalone (sin número)"
    ],
+   "coin": true,
    "img": "https://questying.files.wordpress.com/2023/09/series-1-fairy-pink-2.jpg?w=127",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -661,6 +763,7 @@
    "rarity": "c",
    "year": "oct. 2008 (lanzamiento de la línea)",
    "desc": "Peluche de pingüino de 6.5\" (unos 16 cm) con traje de tela; algunos tienen ropa removible.",
+   "coin": true,
    "img": "https://questying.files.wordpress.com/2023/09/series-1-firefighter-2.jpg?w=150",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -677,6 +780,7 @@
     "Series 4",
     "Series 15"
    ],
+   "coin": true,
    "img": "https://questying.files.wordpress.com/2023/09/series-1-frankenpenguin-2.jpg?w=148",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -694,6 +798,7 @@
     "Series 14",
     "Series 16"
    ],
+   "coin": true,
    "img": "https://questying.files.wordpress.com/2023/09/series-1-pizza-chef-2.jpg?w=137",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -709,6 +814,7 @@
    "versions": [
     "Disney Parks / Jumbo"
    ],
+   "coin": true,
    "img": "https://questying.files.wordpress.com/2023/09/series-1-rocker-with-guitar-2.jpg?w=132",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -727,6 +833,7 @@
     "Series 14",
     "Disney Parks / Jumbo"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2026/05/Series-1-Rockhopper.jpg?resize=500%2C500&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -744,6 +851,7 @@
     "Holiday Assortment",
     "Disney Parks / Jumbo"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2026/05/Series-1-Santa-Hoodie-1.gif?resize=272%2C285&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -761,6 +869,7 @@
     "Series 12",
     "Disney Parks / Jumbo"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2026/03/Series-1-Shadow-Guy.jpg?resize=728%2C721&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -776,6 +885,7 @@
    "versions": [
     "Series 6"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2026/05/Series-1-Soccer-Player-Red.jpg?resize=300%2C300&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -788,6 +898,7 @@
    "rarity": "c",
    "year": "oct. 2008 (lanzamiento de la línea)",
    "desc": "Peluche de pingüino de 6.5\" (unos 16 cm) con traje de tela; algunos tienen ropa removible.",
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2025/08/series-1-space-alien-updated.png?resize=345%2C327&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -803,6 +914,7 @@
     "Series 10",
     "Disney Parks / Jumbo"
    ],
+   "coin": true,
    "img": "https://questying.files.wordpress.com/2023/09/series-2-ballerina-1.jpg?w=150",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -817,6 +929,7 @@
    "versions": [
     "Series 7"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2026/05/Series-2-Band-Member-updated.jpg?resize=496%2C499&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -832,6 +945,7 @@
     "Series 6",
     "Series 8"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2026/05/Series-2-Dragon-Green-updated.jpg?resize=468%2C497&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -846,6 +960,7 @@
    "versions": [
     "Disney Parks / Jumbo"
    ],
+   "coin": true,
    "img": "https://questying.files.wordpress.com/2023/09/series-2-explorer-1.jpg?w=133",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -864,6 +979,7 @@
     "Series 16",
     "Standalone (sin número)"
    ],
+   "coin": true,
    "img": "https://questying.files.wordpress.com/2023/09/series-2-fariy-purple.jpg?w=134",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -878,6 +994,7 @@
    "versions": [
     "Series 9"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2026/05/Series-2-Football-Player-Blue-updated.jpg?resize=484%2C497&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -892,6 +1009,7 @@
    "versions": [
     "Series 12"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2026/05/Series-2-Gamma-Gal-1.jpg?resize=475%2C500&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -908,6 +1026,7 @@
     "Series 11",
     "Disney Parks / Jumbo"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2025/08/series-2-gary-the-gadget-guy-updated.jpg?resize=280%2C259&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -923,6 +1042,7 @@
     "Series 11",
     "Disney Parks / Jumbo"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2026/05/Series-2-King-Roi.jpg?resize=476%2C500&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -940,6 +1060,7 @@
     "Holiday Assortment",
     "Disney Parks / Jumbo"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2026/05/Series-2-Pajamas-updated.jpg?resize=467%2C499&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -951,6 +1072,7 @@
    "name": "Rescue Squad",
    "rarity": "c",
    "desc": "Peluche de pingüino de 6.5\" (unos 16 cm) con traje de tela; algunos tienen ropa removible.",
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2026/05/Series-2-Rescue-Squad-updated.jpg?resize=499%2C500&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -965,6 +1087,7 @@
    "versions": [
     "Series 4"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2026/05/Series-2-Shipmate.jpg?resize=476%2C500&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -981,6 +1104,7 @@
     "Series 12",
     "Disney Parks / Jumbo"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2026/05/Series-2-Shadow-Guy.jpg?resize=300%2C300&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -998,6 +1122,7 @@
     "Series 16",
     "Disney Parks / Jumbo"
    ],
+   "coin": true,
    "img": "https://questying.files.wordpress.com/2024/01/series-3-aunt-arctic.png?w=133",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -1012,6 +1137,7 @@
    "versions": [
     "Series 7"
    ],
+   "coin": true,
    "img": "https://questying.files.wordpress.com/2024/01/series-3-basketball-player-blue.png?w=143",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -1029,6 +1155,7 @@
     "Standalone (sin número)",
     "Disney Parks / Jumbo"
    ],
+   "coin": true,
    "img": "https://questying.files.wordpress.com/2024/01/series-3-bumble-bee.png?w=120",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -1043,6 +1170,7 @@
    "versions": [
     "Series 1"
    ],
+   "coin": true,
    "img": "https://questying.files.wordpress.com/2024/01/series-3-cheerleader-blue.png?w=150",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -1057,6 +1185,7 @@
    "versions": [
     "Series 10"
    ],
+   "coin": true,
    "img": "https://questying.files.wordpress.com/2024/01/series-3-court-jester.png?w=111",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -1074,6 +1203,7 @@
     "Series 14",
     "Disney Parks / Jumbo"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2024/12/series-3-rockhopper-updated.png?resize=500%2C500&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game",
@@ -1094,6 +1224,7 @@
     "Standalone (sin número)",
     "Disney Parks / Jumbo"
    ],
+   "coin": true,
    "img": "https://questying.files.wordpress.com/2024/01/series-3-squidzoid.png?w=146",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -1113,6 +1244,7 @@
     "Series 16",
     "Standalone (sin número)"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2024/12/series-4-faery-updated.png?resize=500%2C500&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game",
@@ -1132,6 +1264,7 @@
     "Series 1",
     "Series 15"
    ],
+   "coin": true,
    "img": "https://questying.files.wordpress.com/2024/01/series-4-frankenpenguin.png?w=144",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -1149,6 +1282,7 @@
     "Series 9",
     "Disney Parks / Jumbo"
    ],
+   "coin": true,
    "img": "https://questying.files.wordpress.com/2024/01/series-4-ninja.png?w=126",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -1164,6 +1298,7 @@
    "versions": [
     "Series 15"
    ],
+   "coin": true,
    "img": "https://questying.files.wordpress.com/2024/01/series-4-rad-scientist.png?w=100",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -1182,6 +1317,7 @@
     "Series 15",
     "Disney Parks / Jumbo"
    ],
+   "coin": true,
    "img": "https://questying.files.wordpress.com/2024/01/series-4-sensei.png?w=129",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -1197,6 +1333,7 @@
    "versions": [
     "Series 2"
    ],
+   "coin": true,
    "img": "https://questying.files.wordpress.com/2024/01/series-4-shipmate.png?w=122",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -1209,6 +1346,7 @@
    "rarity": "c",
    "year": "jun. 2009",
    "desc": "Peluche de pingüino de 6.5\" (unos 16 cm) con traje de tela; algunos tienen ropa removible.",
+   "coin": true,
    "img": "https://questying.files.wordpress.com/2024/01/series-4-twelfth-fish-costume.png?w=128",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -1224,6 +1362,7 @@
     "Series 9",
     "Disney Parks / Jumbo"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2026/05/Series-5-Cadence.png?resize=402%2C500&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game",
@@ -1243,6 +1382,7 @@
     "Series 11",
     "Disney Parks / Jumbo"
    ],
+   "coin": true,
    "img": "https://questying.files.wordpress.com/2024/01/series-5-gary-the-gadget-guy.png?w=117",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -1257,6 +1397,7 @@
    "versions": [
     "Series 11"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2026/05/Series-5-Hockey-Player-Red-1.png?resize=437%2C499&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -1268,6 +1409,7 @@
    "name": "Mermaid",
    "rarity": "c",
    "desc": "Peluche de pingüino de 6.5\" (unos 16 cm) con traje de tela; algunos tienen ropa removible.",
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2026/05/Series-5-Mermaid.png?resize=426%2C499&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -1285,6 +1427,7 @@
     "Holiday Assortment",
     "Disney Parks / Jumbo"
    ],
+   "coin": true,
    "img": "https://questying.files.wordpress.com/2024/01/series-5-pajamas.png?w=120",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -1299,6 +1442,7 @@
    "versions": [
     "Holiday Assortment"
    ],
+   "coin": true,
    "img": "https://questying.files.wordpress.com/2024/01/series-5-reindeer-elf-1.png?w=96",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game",
@@ -1318,6 +1462,7 @@
     "Holiday Assortment",
     "Disney Parks / Jumbo"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2026/05/Series-5-Santa-Suit.png?resize=386%2C500&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game",
@@ -1336,6 +1481,7 @@
     "Series 2",
     "Series 8"
    ],
+   "coin": true,
    "img": "https://questying.files.wordpress.com/2024/01/series-6-dragon-green.png?w=141",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -1352,6 +1498,7 @@
     "Series 9",
     "Disney Parks / Jumbo"
    ],
+   "coin": true,
    "img": "https://questying.files.wordpress.com/2024/01/series-6-ninja.png?w=131",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -1368,6 +1515,7 @@
     "Series 14",
     "Series 16"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2024/12/series-6-pizza-chef-updated.png?resize=500%2C500&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game",
@@ -1389,6 +1537,7 @@
     "Series 15",
     "Disney Parks / Jumbo"
    ],
+   "coin": true,
    "img": "https://questying.files.wordpress.com/2024/01/series-6-sensei.png?w=134",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -1403,6 +1552,7 @@
    "versions": [
     "Series 1"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2026/05/Series-6-Soccer-Player-Blue-1.png?resize=362%2C377&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -1417,6 +1567,7 @@
    "versions": [
     "Series 12"
    ],
+   "coin": true,
    "img": "https://questying.files.wordpress.com/2024/01/series-6-water-sport.png?w=113",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -1434,6 +1585,7 @@
     "Series 16",
     "Disney Parks / Jumbo"
    ],
+   "coin": true,
    "img": "https://questying.files.wordpress.com/2024/01/series-7-aunt-arctic.png?w=125",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -1448,6 +1600,7 @@
    "versions": [
     "Series 2"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2026/05/Series-7-Band-Member-Yellow.jpg?resize=390%2C390&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -1459,6 +1612,7 @@
    "name": "Baseball Player (Red)",
    "rarity": "c",
    "desc": "Peluche de pingüino de 6.5\" (unos 16 cm) con traje de tela; algunos tienen ropa removible.",
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2026/05/Series-7-Baseball-Player-red.jpg?resize=390%2C390&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -1473,6 +1627,7 @@
    "versions": [
     "Series 3"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2026/05/Series-7-Basketball-Player-red.jpg?resize=356%2C379&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -1488,6 +1643,7 @@
     "Series 12",
     "Series 16"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2026/05/Series-7-Leprechaun.jpg?resize=390%2C390&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game",
@@ -1503,6 +1659,7 @@
    "name": "Secret Agent",
    "rarity": "c",
    "desc": "Peluche de pingüino de 6.5\" (unos 16 cm) con traje de tela; algunos tienen ropa removible.",
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2026/05/Series-7-Secret-Agent.jpg?resize=390%2C390&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -1518,6 +1675,7 @@
     "Series 2",
     "Series 6"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2026/05/Series-8-Dragon-blue.jpg?resize=390%2C390&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -1532,6 +1690,7 @@
    "versions": [
     "Series 13"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2026/05/Series-8-Prom-Girl-updated.png?resize=500%2C500&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game",
@@ -1546,6 +1705,7 @@
    "name": "Graduate",
    "rarity": "p",
    "desc": "Peluche de pingüino de 6.5\" (unos 16 cm) con traje de tela; algunos tienen ropa removible.",
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2026/05/Series-8-Graduate.jpg?resize=390%2C390&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -1557,6 +1717,7 @@
    "name": "Lifeguard",
    "rarity": "p",
    "desc": "Peluche de pingüino de 6.5\" (unos 16 cm) con traje de tela; algunos tienen ropa removible.",
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2026/05/Series-8-Lifeguard.jpg?resize=390%2C390&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -1568,6 +1729,7 @@
    "name": "Ranger",
    "rarity": "p",
    "desc": "Peluche de pingüino de 6.5\" (unos 16 cm) con traje de tela; algunos tienen ropa removible.",
+   "coin": true,
    "img": "https://questying.files.wordpress.com/2024/01/series-8-ranger.png?w=123",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -1585,6 +1747,7 @@
     "Series 14",
     "Disney Parks / Jumbo"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2024/12/series-8-rockhopper-updated.png?resize=500%2C500&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game",
@@ -1603,6 +1766,7 @@
    "versions": [
     "Series 14"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2024/12/series-8-soccer-girl-blue-updated.png?resize=500%2C500&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game",
@@ -1617,6 +1781,7 @@
    "name": "Blizzard Wizard",
    "rarity": "p",
    "desc": "Peluche de pingüino de 6.5\" (unos 16 cm) con traje de tela; algunos tienen ropa removible.",
+   "coin": true,
    "img": "https://questying.files.wordpress.com/2024/01/series-9-blizzard-wizard.png?w=127",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -1632,6 +1797,7 @@
     "Series 5",
     "Disney Parks / Jumbo"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2026/05/Series-9-Cadence.png?resize=402%2C500&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game",
@@ -1649,6 +1815,7 @@
    "versions": [
     "Series 2"
    ],
+   "coin": true,
    "img": "https://questying.files.wordpress.com/2024/01/series-9-football-player-red.png?w=135",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -1663,6 +1830,7 @@
    "versions": [
     "Series 15"
    ],
+   "coin": true,
    "img": "https://questying.files.wordpress.com/2024/01/series-9-ladybug.png?w=120",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -1674,6 +1842,7 @@
    "name": "Lobster",
    "rarity": "p",
    "desc": "Peluche de pingüino de 6.5\" (unos 16 cm) con traje de tela; algunos tienen ropa removible.",
+   "coin": true,
    "img": "https://questying.files.wordpress.com/2024/01/series-9-lobster.png?w=140",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -1690,6 +1859,7 @@
     "Series 6",
     "Disney Parks / Jumbo"
    ],
+   "coin": true,
    "img": "https://questying.files.wordpress.com/2024/01/series-9-ninja.png?w=132",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -1707,6 +1877,7 @@
     "Series 15",
     "Disney Parks / Jumbo"
    ],
+   "coin": true,
    "img": "https://questying.files.wordpress.com/2024/01/series-9-sensei.png?w=130",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -1722,6 +1893,7 @@
     "Series 2",
     "Disney Parks / Jumbo"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2026/06/Series-10-Ballerina-updated.jpg?resize=390%2C390&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -1733,6 +1905,7 @@
    "name": "Christmas Tree",
    "rarity": "p",
    "desc": "Peluche de pingüino de 6.5\" (unos 16 cm) con traje de tela; algunos tienen ropa removible.",
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2026/06/Series-10-Christmas-Tree-updated.jpg?resize=276%2C320&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -1747,6 +1920,7 @@
    "versions": [
     "Series 3"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2026/03/Series-10-Court-Jester.png?resize=254%2C261&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -1762,6 +1936,7 @@
     "Standalone (sin número)",
     "Disney Parks / Jumbo"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2026/06/Series-10-Dot-updated.jpg?resize=291%2C320&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -1776,6 +1951,7 @@
    "versions": [
     "Disney Parks / Jumbo"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2026/06/Series-10-Fire-Ninja-updated.jpg?resize=294%2C320&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -1791,6 +1967,7 @@
     "Series 13",
     "Disney Parks / Jumbo"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2026/05/Series-10-Herbert-P.-Bear-updated.png?resize=500%2C500&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game",
@@ -1811,6 +1988,7 @@
     "Holiday Assortment",
     "Disney Parks / Jumbo"
    ],
+   "coin": true,
    "img": "https://questying.files.wordpress.com/2024/01/series-10-pajamas.png?w=126",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -1822,6 +2000,7 @@
    "name": "Fire Sensei",
    "rarity": "p",
    "desc": "Peluche de pingüino de 6.5\" (unos 16 cm) con traje de tela; algunos tienen ropa removible.",
+   "coin": true,
    "img": "https://questying.files.wordpress.com/2024/01/series-11-fire-sensei.png?w=136",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -1838,6 +2017,7 @@
     "Series 5",
     "Disney Parks / Jumbo"
    ],
+   "coin": true,
    "img": "https://questying.files.wordpress.com/2024/01/series-11-gary-the-gadget-guy.png?w=122",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -1852,6 +2032,7 @@
    "versions": [
     "Series 5"
    ],
+   "coin": true,
    "img": "https://questying.files.wordpress.com/2024/01/series-11-hockey-player-blue.png?w=129",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -1867,6 +2048,7 @@
     "Series 2",
     "Disney Parks / Jumbo"
    ],
+   "coin": true,
    "img": "https://questying.files.wordpress.com/2024/01/series-11-king-roi.png?w=131",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -1881,6 +2063,7 @@
    "versions": [
     "Series 14"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2026/05/Series-11-Klutzy-updated.png?resize=500%2C500&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game",
@@ -1900,6 +2083,7 @@
     "Standalone (sin número)",
     "Disney Parks / Jumbo"
    ],
+   "coin": true,
    "img": "https://questying.files.wordpress.com/2024/01/series-11-squidzoid.png?w=136",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -1914,6 +2098,7 @@
    "versions": [
     "Series 16"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2026/03/Series-11-Yeti.png?resize=244%2C260&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -1931,6 +2116,7 @@
     "Series 16",
     "Disney Parks / Jumbo"
    ],
+   "coin": true,
    "img": "https://questying.files.wordpress.com/2024/01/series-12-aunt-arctic.png?w=130",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -1945,6 +2131,7 @@
    "versions": [
     "Series 2"
    ],
+   "coin": true,
    "img": "https://questying.files.wordpress.com/2024/01/series-12-gamma-gal.png?w=136",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -1960,6 +2147,7 @@
     "Series 7",
     "Series 16"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2026/05/Series-12-Leprechaun.jpg?resize=390%2C390&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game",
@@ -1975,6 +2163,7 @@
    "name": "New Rocker",
    "rarity": "p",
    "desc": "Peluche de pingüino de 6.5\" (unos 16 cm) con traje de tela; algunos tienen ropa removible.",
+   "coin": true,
    "img": "https://questying.files.wordpress.com/2024/01/series-12-new-rocker.png?w=119",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -1991,6 +2180,7 @@
     "Series 2",
     "Disney Parks / Jumbo"
    ],
+   "coin": true,
    "img": "https://questying.files.wordpress.com/2024/01/series-12-shadow-guy.png?w=119",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -2005,6 +2195,7 @@
    "versions": [
     "Series 6"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2026/03/Series-12-Water-Sport.png?resize=205%2C255&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -2020,6 +2211,7 @@
     "Series 16",
     "Standalone (sin número)"
    ],
+   "coin": true,
    "img": "https://questying.files.wordpress.com/2024/01/series-12-white-chocolate-bunny.png?w=119",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -2031,6 +2223,7 @@
    "name": "Classy T-Shirt",
    "rarity": "r",
    "desc": "Peluche de pingüino de 6.5\" (unos 16 cm) con traje de tela; algunos tienen ropa removible.",
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2024/12/series-13-classy-t-shirt-updated.png?resize=500%2C500&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -2049,6 +2242,7 @@
     "Series 16",
     "Standalone (sin número)"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2024/12/series-13-faery-updated.png?resize=500%2C500&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game",
@@ -2067,6 +2261,7 @@
     "Series 10",
     "Disney Parks / Jumbo"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2024/12/series-13-herbert-p.-bear-updated.png?resize=500%2C500&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game",
@@ -2084,6 +2279,7 @@
    "versions": [
     "Series 8"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2024/12/series-13-prom-girl-updated.png?resize=500%2C500&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game",
@@ -2098,6 +2294,7 @@
    "name": "Squire",
    "rarity": "r",
    "desc": "Peluche de pingüino de 6.5\" (unos 16 cm) con traje de tela; algunos tienen ropa removible.",
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2025/03/series-13-squire-updated.png?resize=500%2C500&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -2109,6 +2306,7 @@
    "name": "Tactical Agent",
    "rarity": "r",
    "desc": "Peluche de pingüino de 6.5\" (unos 16 cm) con traje de tela; algunos tienen ropa removible.",
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2026/03/Series-13-Tactical-Agent-updated-150x150.png?resize=150%2C150&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -2126,6 +2324,7 @@
     "Standalone (sin número)",
     "Disney Parks / Jumbo"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2024/12/series-14-bumble-bee-updated.png?resize=500%2C500&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -2140,6 +2339,7 @@
    "versions": [
     "Series 11"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2024/12/series-14-klutzy-updated.png?resize=500%2C500&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game",
@@ -2154,6 +2354,7 @@
    "name": "Phoenix Queen",
    "rarity": "r",
    "desc": "Peluche de pingüino de 6.5\" (unos 16 cm) con traje de tela; algunos tienen ropa removible.",
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2026/03/Series-14-Phoenix-Queen-updated-150x150.png?resize=150%2C150&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -2170,6 +2371,7 @@
     "Series 6",
     "Series 16"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2024/12/series-14-pizza-chef-updated.png?resize=500%2C500&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game",
@@ -2191,6 +2393,7 @@
     "Series 8",
     "Disney Parks / Jumbo"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2024/12/series-14-rockhopper-updated.png?resize=500%2C500&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game",
@@ -2209,6 +2412,7 @@
    "versions": [
     "Series 8"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2024/12/series-14-soccer-girl-blue-updated.png?resize=500%2C500&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game",
@@ -2223,6 +2427,7 @@
    "name": "Swashbuckler",
    "rarity": "r",
    "desc": "Peluche de pingüino de 6.5\" (unos 16 cm) con traje de tela; algunos tienen ropa removible.",
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2026/03/Series-14-Swashbuckler-updated-150x150.png?resize=150%2C150&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -2234,6 +2439,7 @@
    "name": "Astronaut",
    "rarity": "r",
    "desc": "Peluche de pingüino de 6.5\" (unos 16 cm) con traje de tela; algunos tienen ropa removible.",
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2026/03/Series-15-Astronaut.png?resize=224%2C243&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -2245,6 +2451,7 @@
    "name": "Clown",
    "rarity": "r",
    "desc": "Peluche de pingüino de 6.5\" (unos 16 cm) con traje de tela; algunos tienen ropa removible.",
+   "coin": true,
    "img": "https://questying.files.wordpress.com/2024/01/series-15-clown.png?w=124",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -2260,6 +2467,7 @@
     "Series 1",
     "Series 4"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2026/03/Series-15-Frankenpenguin.png?resize=211%2C239&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -2274,6 +2482,7 @@
    "versions": [
     "Series 9"
    ],
+   "coin": true,
    "img": "https://questying.files.wordpress.com/2024/01/series-15-ladybug.png?w=120",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -2285,6 +2494,7 @@
    "name": "Mummy",
    "rarity": "r",
    "desc": "Peluche de pingüino de 6.5\" (unos 16 cm) con traje de tela; algunos tienen ropa removible.",
+   "coin": true,
    "img": "https://questying.files.wordpress.com/2024/01/series-15-mummy.png?w=146",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -2299,6 +2509,7 @@
    "versions": [
     "Series 4"
    ],
+   "coin": true,
    "img": "https://questying.files.wordpress.com/2024/01/series-15-rad-scientist.png?w=100",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -2316,6 +2527,7 @@
     "Series 9",
     "Disney Parks / Jumbo"
    ],
+   "coin": true,
    "img": "https://questying.files.wordpress.com/2024/01/series-15-sensei.png?w=126",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -2333,6 +2545,7 @@
     "Series 12",
     "Disney Parks / Jumbo"
    ],
+   "coin": true,
    "img": "https://questying.files.wordpress.com/2024/01/series-16-aunt-arctic.png?w=126",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -2351,6 +2564,7 @@
     "Series 13",
     "Standalone (sin número)"
    ],
+   "coin": true,
    "img": "https://questying.files.wordpress.com/2024/01/series-16-faery.png?w=150",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -2366,6 +2580,7 @@
     "Series 7",
     "Series 12"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2026/05/Series-16-Leprechaun.jpg?resize=390%2C390&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game",
@@ -2386,6 +2601,7 @@
     "Series 6",
     "Series 14"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2024/12/series-16-pizza-chef-updated.png?resize=500%2C500&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game",
@@ -2401,6 +2617,7 @@
    "name": "Puffle Handler",
    "rarity": "r",
    "desc": "Peluche de pingüino de 6.5\" (unos 16 cm) con traje de tela; algunos tienen ropa removible.",
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2026/05/Series-16-Puffle-Handler.jpg?resize=275%2C275&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -2416,6 +2633,7 @@
     "Series 12",
     "Standalone (sin número)"
    ],
+   "coin": true,
    "img": "https://questying.files.wordpress.com/2024/01/series-16-white-chocolate-bunny.png?w=127",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -2430,6 +2648,7 @@
    "versions": [
     "Series 11"
    ],
+   "coin": true,
    "img": "https://questying.files.wordpress.com/2024/01/series-16-yeti.png?w=131",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -2447,6 +2666,7 @@
     "Series 10",
     "Disney Parks / Jumbo"
    ],
+   "coin": true,
    "img": "https://questying.files.wordpress.com/2024/01/holiday-assortment-series-pajamas.png?w=114",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -2461,6 +2681,7 @@
    "versions": [
     "Series 5"
    ],
+   "coin": true,
    "img": "https://questying.files.wordpress.com/2024/01/holiday-assortment-series-reindeer-elf-1.png?w=96",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game",
@@ -2480,6 +2701,7 @@
     "Series 5",
     "Disney Parks / Jumbo"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2026/05/Series-Holiday-Assortment-Santa-Suit.png?resize=386%2C500&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game",
@@ -2494,6 +2716,7 @@
    "name": "Snow Fairy",
    "rarity": "p",
    "desc": "Peluche de pingüino de 6.5\" (unos 16 cm) con traje de tela; algunos tienen ropa removible.",
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2026/05/Holiday-Assortment-Series-Snow-Fairy.png?resize=319%2C296&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -2511,6 +2734,7 @@
     "Series 14",
     "Disney Parks / Jumbo"
    ],
+   "coin": true,
    "img": "https://questying.files.wordpress.com/2024/01/un-numbered-series-bumble-bee.png?w=119",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -2522,6 +2746,7 @@
    "name": "Bunny Costume",
    "rarity": "p",
    "desc": "Peluche de pingüino de 6.5\" (unos 16 cm) con traje de tela; algunos tienen ropa removible.",
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2026/05/Un-Numbered-Series-Bunny-Costume.png?resize=328%2C399&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -2537,6 +2762,7 @@
     "Series 10",
     "Disney Parks / Jumbo"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2026/05/Series-Un-numbered-Dot.jpg?resize=382%2C475&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -2555,6 +2781,7 @@
     "Series 13",
     "Series 16"
    ],
+   "coin": true,
    "img": "https://questying.files.wordpress.com/2024/01/un-numbered-series-feary.png?w=150",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -2566,6 +2793,7 @@
    "name": "Rookie",
    "rarity": "p",
    "desc": "Peluche de pingüino de 6.5\" (unos 16 cm) con traje de tela; algunos tienen ropa removible.",
+   "coin": true,
    "img": "https://questying.files.wordpress.com/2024/01/un-numbered-series-rookie.png?w=150",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -2582,6 +2810,7 @@
     "Series 11",
     "Disney Parks / Jumbo"
    ],
+   "coin": true,
    "img": "https://questying.files.wordpress.com/2024/01/un-numbered-series-squidzoid.png?w=138",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -2597,6 +2826,7 @@
     "Series 12",
     "Series 16"
    ],
+   "coin": true,
    "img": "https://questying.files.wordpress.com/2024/01/un-numbered-series-white-chocolate-bunny.png?w=122",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -2608,6 +2838,7 @@
    "name": "Ninja + Yeti + Sensei",
    "rarity": "r",
    "desc": "Peluche de pingüino de 6.5\" (unos 16 cm) con traje de tela; algunos tienen ropa removible.",
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2026/05/Penguin-3-Pack-Ninja-Yeti-Sensei.jpg?resize=495%2C252&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -2619,6 +2850,7 @@
    "name": "Shipmate + Reindeer Elf + Rockhopper",
    "rarity": "r",
    "desc": "Peluche de pingüino de 6.5\" (unos 16 cm) con traje de tela; algunos tienen ropa removible.",
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2026/05/Penguin-3-Pack-Shipmate-Reindeer-Elf-Rockhopper.jpg?resize=496%2C308&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -2636,6 +2868,7 @@
     "Series 12",
     "Series 16"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2026/05/Disney-Parks-Jumbo-Series-Aunt-Arctic.jpg?resize=390%2C390&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -2651,6 +2884,7 @@
     "Series 2",
     "Series 10"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2026/05/Ballerina-Jumbo.jpg?resize=400%2C400&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -2668,6 +2902,7 @@
     "Series 14",
     "Standalone (sin número)"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2026/05/Bumble-Bee-Jumbo.jpg?resize=400%2C400&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -2683,6 +2918,7 @@
     "Series 5",
     "Series 9"
    ],
+   "coin": true,
    "img": "https://questying.files.wordpress.com/2024/01/disney-parks-jumbo-series-cadence.png?w=136",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -2698,6 +2934,7 @@
     "Series 10",
     "Standalone (sin número)"
    ],
+   "coin": true,
    "img": "https://questying.files.wordpress.com/2024/01/disney-parks-jumbo-series-dot.png?w=150",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -2712,6 +2949,7 @@
    "versions": [
     "Series 2"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2026/05/Disney-Parks-Jumbo-Series-Explorer.png?resize=360%2C357&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -2723,6 +2961,7 @@
    "name": "Fairy",
    "rarity": "r",
    "desc": "Versión grande del peluche de pingüino, vendida sobre todo en parques Disney.",
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2026/05/Disney-Parks-Jumbo-Series-Fairy.png?resize=390%2C407&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -2737,6 +2976,7 @@
    "versions": [
     "Series 10"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2026/05/FIre-Ninja-Jumbo.jpg?resize=400%2C400&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -2753,6 +2993,7 @@
     "Series 5",
     "Series 11"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2026/05/Gary-Jumbo.jpg?resize=400%2C400&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -2768,6 +3009,7 @@
     "Series 10",
     "Series 13"
    ],
+   "coin": true,
    "img": "https://questying.files.wordpress.com/2024/01/disney-parks-jumbo-series-herbert-p.-bear.png?w=125",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -2783,6 +3025,7 @@
     "Series 2",
     "Series 11"
    ],
+   "coin": true,
    "img": "https://questying.files.wordpress.com/2024/01/disney-parks-jumbo-series-king-roi.png?w=113",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -2799,6 +3042,7 @@
     "Series 6",
     "Series 9"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2026/05/Ninja-Jumbo.jpg?resize=400%2C400&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -2816,6 +3060,7 @@
     "Series 10",
     "Holiday Assortment"
    ],
+   "coin": true,
    "img": "https://questying.files.wordpress.com/2024/01/disney-parks-jumbo-series-pajamas.png?w=133",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -2830,6 +3075,7 @@
    "versions": [
     "Series 1"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2026/05/Disney-Parks-Jumbo-Series-Rocker-with-Guitar.png?resize=390%2C408&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -2847,6 +3093,7 @@
     "Series 8",
     "Series 14"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2026/05/Disney-Parks-Jumbo-Series-Rockhopper.jpg?resize=390%2C390&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -2863,6 +3110,7 @@
     "Series 5",
     "Holiday Assortment"
    ],
+   "coin": true,
    "img": "https://questying.files.wordpress.com/2024/01/disney-parks-jumbo-series-santa.png?w=126",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -2880,6 +3128,7 @@
     "Series 9",
     "Series 15"
    ],
+   "coin": true,
    "img": "https://questying.files.wordpress.com/2024/01/disney-parks-jumbo-series-sensei.png?w=144",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -2896,6 +3145,7 @@
     "Series 2",
     "Series 12"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2026/05/Disney-Parks-Jumbo-Series-Shadow-Guy.png?resize=355%2C353&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -2912,6 +3162,7 @@
     "Series 11",
     "Standalone (sin número)"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2026/05/Disney-Parks-Jumbo-Series-Squidzoid.jpg?resize=390%2C390&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/penguin-plushies/",
    "imgBy": "That Penguin Game"
@@ -2982,15 +3233,33 @@
    "desc": "Peluche de pingüino de 6.5\" (unos 16 cm) con traje de tela; algunos tienen ropa removible."
   },
   {
-   "id": "plush-especiales-y-no-lanzados-gary-the-gadget-guy-9-series-2",
+   "id": "plush-peluches-de-9-captain-rockhopper-9",
    "cat": "plush",
-   "group": "Especiales y no lanzados",
-   "name": "Gary the Gadget Guy 9\" (Series 2)",
+   "group": "Peluches de 9\"",
+   "name": "Captain Rockhopper 9\"",
+   "rarity": "r",
+   "desc": "Peluche de pingüino de 6.5\" (unos 16 cm) con traje de tela; algunos tienen ropa removible.",
+   "coin": true
+  },
+  {
+   "id": "plush-peluches-de-9-gary-the-gadget-guy-9",
+   "cat": "plush",
+   "group": "Peluches de 9\"",
+   "name": "Gary the Gadget Guy 9\"",
    "rarity": "r",
    "desc": "Peluche de pingüino de 6.5\" (unos 16 cm) con traje de tela; algunos tienen ropa removible.",
    "img": "https://cdn11.bigcommerce.com/s-0kvv9/products/113728/images/130536/club-penguin-series-2-gary-the-gadget-guy-9-plush-figure-jakks-pacific-4__84648.1461392300.500.750.jpg?c=2",
    "imgSrc": "https://toywiz.com/club-penguin-series-2-gary-the-gadget-guy-9-inch-plush-figure/",
    "imgBy": "ToyWiz"
+  },
+  {
+   "id": "plush-peluches-de-9-ninja-9-disney-store",
+   "cat": "plush",
+   "group": "Peluches de 9\"",
+   "name": "Ninja 9\" (Disney Store)",
+   "rarity": "r",
+   "note": "Logo de Disney Store bordado bajo el pie",
+   "desc": "Peluche de pingüino de 6.5\" (unos 16 cm) con traje de tela; algunos tienen ropa removible."
   },
   {
    "id": "puffles-series-0-black-puffle",
@@ -3012,6 +3281,7 @@
     "Series 10",
     "Disney Parks"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2026/05/Series-0-Black-Puffle-updated.jpg?resize=300%2C300&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game"
@@ -3035,6 +3305,7 @@
     "Series 9",
     "Disney Parks"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2026/05/Series-0-Blue-Puffle-updated.jpg?resize=300%2C300&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game"
@@ -3058,6 +3329,7 @@
     "Series 9",
     "Disney Parks"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2024/09/series-0-green-puffle.jpg?resize=420%2C370&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game"
@@ -3082,6 +3354,7 @@
     "Standalone",
     "Disney Parks"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2026/05/Series-0-Pink-Puffle-updated.jpg?resize=300%2C300&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game"
@@ -3104,6 +3377,7 @@
     "Series 9",
     "Disney Parks"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2026/05/Series-0-Purple-Puffle-updated.jpg?resize=300%2C300&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game"
@@ -3129,6 +3403,7 @@
     "Standalone",
     "Disney Parks"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2026/05/Series-0-Red-Puffle-updated.jpg?resize=300%2C300&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game"
@@ -3153,6 +3428,7 @@
     "Series 10",
     "Disney Parks"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2026/05/Series-0-Yellow-Puffle-updated.jpg?resize=300%2C300&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game"
@@ -3177,6 +3453,7 @@
     "Series 10",
     "Disney Parks"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2026/05/Series-1-Black-Puffle-updated.jpg?resize=293%2C299&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game",
@@ -3203,6 +3480,7 @@
     "Series 9",
     "Disney Parks"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2026/05/Series-1-Blue-Puffle-updated.jpg?resize=261%2C261&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game",
@@ -3229,6 +3507,7 @@
     "Series 9",
     "Disney Parks"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2026/05/Series-1-Green-Puffle-updated.jpg?resize=293%2C300&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game",
@@ -3257,6 +3536,7 @@
     "Standalone",
     "Disney Parks"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2026/05/Series-1-Pink-Puffle-updated.jpg?resize=269%2C269&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game",
@@ -3282,6 +3562,7 @@
     "Series 9",
     "Disney Parks"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2026/05/Series-1-Purple-Puffle-updated.jpg?resize=264%2C264&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game",
@@ -3310,6 +3591,7 @@
     "Standalone",
     "Disney Parks"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2026/05/Series-1-Red-Puffle-updated.jpg?resize=280%2C286&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game",
@@ -3338,6 +3620,7 @@
     "Series 10",
     "Disney Parks"
    ],
+   "coin": true,
    "img": "https://questying.files.wordpress.com/2024/01/series-1-yellow-puffle.png?w=146",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game"
@@ -3362,6 +3645,7 @@
     "Series 10",
     "Disney Parks"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2026/06/Series-2-Black-Puffle-updated.jpg?resize=431%2C495&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game"
@@ -3385,6 +3669,7 @@
     "Series 9",
     "Disney Parks"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2026/06/Series-2-Blue-Puffle-updated-2.jpg?resize=477%2C493&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game"
@@ -3408,6 +3693,7 @@
     "Series 9",
     "Disney Parks"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2026/06/Series-2-Green-Puffle-updated.jpg?resize=462%2C482&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game"
@@ -3432,6 +3718,7 @@
     "Standalone",
     "Disney Parks"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2026/06/Series-2-Pink-Puffle-updated-2.jpg?resize=448%2C485&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game"
@@ -3454,6 +3741,7 @@
     "Series 9",
     "Disney Parks"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2026/06/Series-2-Purple-Puffle-updated-2.jpg?resize=468%2C496&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game"
@@ -3479,6 +3767,7 @@
     "Standalone",
     "Disney Parks"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2026/06/Series-2-Red-Puffle-updated.jpg?resize=439%2C493&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game"
@@ -3503,6 +3792,7 @@
     "Series 10",
     "Disney Parks"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2026/06/Series-2-Yellow-Puffle-updated-2.jpg?resize=475%2C491&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game"
@@ -3527,6 +3817,7 @@
     "Series 10",
     "Disney Parks"
    ],
+   "coin": true,
    "img": "https://questying.files.wordpress.com/2024/01/series-3-black-puffle.png?w=143",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game"
@@ -3550,6 +3841,7 @@
     "Series 9",
     "Disney Parks"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2026/05/Series-3-Blue-Puffle-updated.png?resize=480%2C497&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game",
@@ -3576,6 +3868,7 @@
     "Series 9",
     "Disney Parks"
    ],
+   "coin": true,
    "img": "https://questying.files.wordpress.com/2024/01/series-3-green-puffle.png?w=133",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game"
@@ -3600,6 +3893,7 @@
     "Standalone",
     "Disney Parks"
    ],
+   "coin": true,
    "img": "https://questying.files.wordpress.com/2024/01/series-3-pink-puffle.png?w=147",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game"
@@ -3622,6 +3916,7 @@
     "Series 9",
     "Disney Parks"
    ],
+   "coin": true,
    "img": "https://questying.files.wordpress.com/2024/01/series-3-purple-puffle.png?w=143",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game"
@@ -3647,6 +3942,7 @@
     "Standalone",
     "Disney Parks"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2024/12/series-3-red-puffle-updated.png?resize=500%2C500&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game",
@@ -3672,6 +3968,7 @@
     "Standalone",
     "Disney Parks"
    ],
+   "coin": true,
    "img": "https://questying.files.wordpress.com/2024/01/series-3-white-puffle.png?w=139",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game"
@@ -3696,6 +3993,7 @@
     "Series 10",
     "Disney Parks"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2024/12/series-3-yellow-puffle-updated.png?resize=500%2C500&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game",
@@ -3724,6 +4022,7 @@
     "Series 10",
     "Disney Parks"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2026/05/Series-4-Black-Puffle.jpg?resize=293%2C299&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game",
@@ -3750,6 +4049,7 @@
     "Series 9",
     "Disney Parks"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2026/05/Series-4-Blue-Puffle-updated.jpg?resize=293%2C300&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game"
@@ -3773,6 +4073,7 @@
     "Series 9",
     "Disney Parks"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2026/05/Series-4-Green-Puffle-updated.jpg?resize=293%2C300&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game",
@@ -3796,6 +4097,7 @@
     "Series 13",
     "Disney Parks"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2026/05/Series-4-Orange-Puffle-updated.jpg?resize=293%2C299&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game",
@@ -3824,6 +4126,7 @@
     "Standalone",
     "Disney Parks"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2026/05/Series-4-Pink-Puffle-updated.jpg?resize=293%2C299&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game"
@@ -3846,6 +4149,7 @@
     "Series 9",
     "Disney Parks"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2026/05/Series-4-Purple-Puffle-updated.jpg?resize=292%2C299&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game"
@@ -3871,6 +4175,7 @@
     "Standalone",
     "Disney Parks"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2026/05/Series-4-Red-Puffle-updated.jpg?resize=280%2C286&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game",
@@ -3896,6 +4201,7 @@
     "Standalone",
     "Disney Parks"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2026/05/Series-4-White-Puffle-updated.jpg?resize=292%2C300&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game",
@@ -3923,6 +4229,7 @@
     "Series 10",
     "Disney Parks"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2026/05/Series-4-Yellow-Puffle-updated.jpg?resize=277%2C284&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game"
@@ -3947,6 +4254,7 @@
     "Series 10",
     "Disney Parks"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2026/05/Series-5-Black-Puffle-updated.png?resize=500%2C500&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game",
@@ -3973,6 +4281,7 @@
     "Series 9",
     "Disney Parks"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2026/05/Series-5-Blue-Puffle-updated.png?resize=500%2C500&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game",
@@ -3999,6 +4308,7 @@
     "Series 9",
     "Disney Parks"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2026/05/Series-5-Green-Puffle-updated.png?resize=500%2C500&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game",
@@ -4021,6 +4331,7 @@
     "Series 13",
     "Disney Parks"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2026/05/Series-5-Orange-Puffle-updated.png?resize=260%2C250&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game"
@@ -4045,6 +4356,7 @@
     "Standalone",
     "Disney Parks"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2026/05/Series-5-Pink-Puffle-updated.png?resize=260%2C250&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game",
@@ -4070,6 +4382,7 @@
     "Series 9",
     "Disney Parks"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2026/05/Series-5-Purple-Puffle-updated.png?resize=500%2C500&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game",
@@ -4098,6 +4411,7 @@
     "Standalone",
     "Disney Parks"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2026/05/Series-5-Red-Puffle-updated.png?resize=500%2C500&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game",
@@ -4122,6 +4436,7 @@
     "Standalone",
     "Disney Parks"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2026/05/Series-5-White-Puffle-updated.png?resize=295%2C259&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game"
@@ -4146,6 +4461,7 @@
     "Series 10",
     "Disney Parks"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2026/05/Series-5-Yellow-Puffle-updated.png?resize=260%2C236&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game",
@@ -4173,6 +4489,7 @@
     "Series 10",
     "Disney Parks"
    ],
+   "coin": true,
    "img": "https://questying.files.wordpress.com/2024/01/series-6-black-puffle.png?w=140",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game"
@@ -4196,6 +4513,7 @@
     "Series 9",
     "Disney Parks"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2026/05/Series-6-Blue-Puffle-updated.png?resize=480%2C497&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game",
@@ -4222,6 +4540,7 @@
     "Series 9",
     "Disney Parks"
    ],
+   "coin": true,
    "img": "https://questying.files.wordpress.com/2024/01/series-6-green-puffle.png?w=134",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game"
@@ -4241,6 +4560,7 @@
     "Series 13",
     "Disney Parks"
    ],
+   "coin": true,
    "img": "https://questying.files.wordpress.com/2024/01/series-6-orange-puffle.png?w=133",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game"
@@ -4265,6 +4585,7 @@
     "Standalone",
     "Disney Parks"
    ],
+   "coin": true,
    "img": "https://questying.files.wordpress.com/2024/01/series-6-pink-puffle.png?w=139",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game"
@@ -4287,6 +4608,7 @@
     "Series 9",
     "Disney Parks"
    ],
+   "coin": true,
    "img": "https://questying.files.wordpress.com/2024/01/series-6-purple-puffle.png?w=142",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game"
@@ -4312,6 +4634,7 @@
     "Standalone",
     "Disney Parks"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2024/12/series-6-red-puffle-updated.png?resize=500%2C500&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game",
@@ -4337,6 +4660,7 @@
     "Standalone",
     "Disney Parks"
    ],
+   "coin": true,
    "img": "https://questying.files.wordpress.com/2024/01/series-6-white-puffle.png?w=127",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game"
@@ -4361,6 +4685,7 @@
     "Series 10",
     "Disney Parks"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2024/12/series-6-yellow-puffle-updated.png?resize=500%2C500&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game",
@@ -4389,6 +4714,7 @@
     "Series 10",
     "Disney Parks"
    ],
+   "coin": true,
    "img": "https://questying.files.wordpress.com/2024/01/series-7-black-puffle.png?w=145",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game"
@@ -4412,6 +4738,7 @@
     "Series 9",
     "Disney Parks"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2026/05/Series-7-Blue-Puffle-updated.jpg?resize=500%2C500&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game"
@@ -4428,6 +4755,7 @@
     "Series 9",
     "Series 13"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2026/05/Series-7-Brown-Puffle-updated.jpg?resize=500%2C500&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game"
@@ -4451,6 +4779,7 @@
     "Series 9",
     "Disney Parks"
    ],
+   "coin": true,
    "img": "https://questying.files.wordpress.com/2024/01/series-7-green-puffle.png?w=136",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game"
@@ -4470,6 +4799,7 @@
     "Series 13",
     "Disney Parks"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2026/05/Series-7-Orange-Puffle-updated.jpg?resize=293%2C299&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game",
@@ -4498,6 +4828,7 @@
     "Standalone",
     "Disney Parks"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2026/05/Series-7-Pink-Puffle-updated.png?resize=260%2C250&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game",
@@ -4523,6 +4854,7 @@
     "Series 9",
     "Disney Parks"
    ],
+   "coin": true,
    "img": "https://questying.files.wordpress.com/2024/01/series-7-purple-puffle.png?w=138",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game"
@@ -4548,6 +4880,7 @@
     "Standalone",
     "Disney Parks"
    ],
+   "coin": true,
    "img": "https://questying.files.wordpress.com/2024/01/series-7-red-puffle.png?w=142",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game"
@@ -4569,6 +4902,7 @@
     "Standalone",
     "Disney Parks"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2026/05/Series-7-White-Puffle-updated.jpg?resize=292%2C300&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game",
@@ -4596,6 +4930,7 @@
     "Series 10",
     "Disney Parks"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2026/05/Series-7-Yellow-Puffle-updated.png?resize=260%2C236&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game",
@@ -4623,6 +4958,7 @@
     "Series 10",
     "Disney Parks"
    ],
+   "coin": true,
    "img": "https://questying.files.wordpress.com/2024/01/series-8-black-puffle.png?w=132",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game"
@@ -4646,6 +4982,7 @@
     "Series 9",
     "Disney Parks"
    ],
+   "coin": true,
    "img": "https://questying.files.wordpress.com/2024/01/series-8-blue-puffle.png?w=126",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game"
@@ -4662,6 +4999,7 @@
     "Series 9",
     "Series 13"
    ],
+   "coin": true,
    "img": "https://questying.files.wordpress.com/2024/01/series-8-brown-puffle.png?w=130",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game"
@@ -4685,6 +5023,7 @@
     "Series 9",
     "Disney Parks"
    ],
+   "coin": true,
    "img": "https://questying.files.wordpress.com/2024/01/series-8-green-puffle.png?w=132",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game"
@@ -4704,6 +5043,7 @@
     "Series 13",
     "Disney Parks"
    ],
+   "coin": true,
    "img": "https://questying.files.wordpress.com/2024/01/series-8-orange-puffle.png?w=131",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game"
@@ -4728,6 +5068,7 @@
     "Standalone",
     "Disney Parks"
    ],
+   "coin": true,
    "img": "https://questying.files.wordpress.com/2024/01/series-8-pink-puffle.png?w=129",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game"
@@ -4753,6 +5094,7 @@
     "Standalone",
     "Disney Parks"
    ],
+   "coin": true,
    "img": "https://questying.files.wordpress.com/2024/01/series-8-red-puffle.png?w=130",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game"
@@ -4774,6 +5116,7 @@
     "Standalone",
     "Disney Parks"
    ],
+   "coin": true,
    "img": "https://questying.files.wordpress.com/2024/01/series-8-white-puffle.png?w=132",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game"
@@ -4798,6 +5141,7 @@
     "Series 10",
     "Disney Parks"
    ],
+   "coin": true,
    "img": "https://questying.files.wordpress.com/2024/01/series-8-yellow-puffle.png?w=127",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game"
@@ -4822,6 +5166,7 @@
     "Series 10",
     "Disney Parks"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2024/12/series-9-black-puffle-updated.png?ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game",
@@ -4848,6 +5193,7 @@
     "Series 8",
     "Disney Parks"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2024/12/series-9-blue-puffle-updated.png?ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game",
@@ -4867,6 +5213,7 @@
     "Series 8",
     "Series 13"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2024/12/series-9-brown-puffle-updated.png?ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game",
@@ -4893,6 +5240,7 @@
     "Series 8",
     "Disney Parks"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2024/12/series-9-green-puffle-updated.png?resize=500%2C500&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game",
@@ -4920,6 +5268,7 @@
     "Standalone",
     "Disney Parks"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2024/12/series-9-pink-puffle-updated.png?resize=500%2C500&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game"
@@ -4942,6 +5291,7 @@
     "Series 7",
     "Disney Parks"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2024/12/series-9-purple-puffle-updated.png?resize=500%2C500&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game",
@@ -4970,6 +5320,7 @@
     "Standalone",
     "Disney Parks"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2024/12/series-9-red-puffle-updated.png?resize=500%2C500&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game",
@@ -4994,6 +5345,7 @@
     "Standalone",
     "Disney Parks"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2024/12/series-9-white-puffle-updated.png?resize=500%2C500&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game"
@@ -5018,6 +5370,7 @@
     "Series 10",
     "Disney Parks"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2024/12/series-9-yellow-puffle-updated.png?resize=500%2C500&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game"
@@ -5043,6 +5396,7 @@
     "Series 9",
     "Disney Parks"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2024/12/series-10-black-puffle-updated.png?ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game"
@@ -5055,6 +5409,7 @@
    "rarity": "p",
    "year": "oct. 2011 (primeros con gorro)",
    "desc": "Puffle de peluche con pelo tipo troll y cuerpo mitad peluche, mitad beanie. Los primeros miden 5\" y tienen todos la misma sonrisa; los posteriores miden 4\" y tienen caras distintas.",
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2024/12/series-10-blue-puffle-with-pharaoh-hat-updated.png?ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game"
@@ -5067,6 +5422,7 @@
    "rarity": "p",
    "year": "oct. 2011 (primeros con gorro)",
    "desc": "Puffle de peluche con pelo tipo troll y cuerpo mitad peluche, mitad beanie. Los primeros miden 5\" y tienen todos la misma sonrisa; los posteriores miden 4\" y tienen caras distintas.",
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2024/12/series-10-orange-puffle-with-franken-hat-updated.png?resize=500%2C500&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game"
@@ -5093,6 +5449,7 @@
     "Standalone",
     "Disney Parks"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2024/12/series-10-red-puffle-updated.png?resize=500%2C500&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game",
@@ -5110,6 +5467,7 @@
    "note": "Exclusivo Target",
    "year": "oct. 2011 (primeros con gorro)",
    "desc": "Puffle de peluche con pelo tipo troll y cuerpo mitad peluche, mitad beanie. Los primeros miden 5\" y tienen todos la misma sonrisa; los posteriores miden 4\" y tienen caras distintas.",
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2024/12/series-10-white-puffle-with-snowflake-helmet-updated.png?resize=500%2C500&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game"
@@ -5135,6 +5493,7 @@
     "Series 9",
     "Disney Parks"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2024/12/series-10-yellow-puffle-updated.png?resize=500%2C500&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game",
@@ -5150,6 +5509,7 @@
    "name": "Blue Puffle + The Overgrown",
    "rarity": "p",
    "desc": "Puffle de peluche con pelo tipo troll y cuerpo mitad peluche, mitad beanie. Los primeros miden 5\" y tienen todos la misma sonrisa; los posteriores miden 4\" y tienen caras distintas.",
+   "coin": true,
    "img": "https://questying.files.wordpress.com/2024/01/series-11-blue-puffle-with-plaid-bandana.png?w=150",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game"
@@ -5164,6 +5524,7 @@
    "versions": [
     "Series 12"
    ],
+   "coin": true,
    "img": "https://questying.files.wordpress.com/2024/01/series-11-brown-puffle-with-goggles.png?w=147",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game"
@@ -5175,6 +5536,7 @@
    "name": "Green Puffle + The Scene-Stealer",
    "rarity": "p",
    "desc": "Puffle de peluche con pelo tipo troll y cuerpo mitad peluche, mitad beanie. Los primeros miden 5\" y tienen todos la misma sonrisa; los posteriores miden 4\" y tienen caras distintas.",
+   "coin": true,
    "img": "https://questying.files.wordpress.com/2024/01/series-11-green-puffle-with-yellow-bandana.png?w=150",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game"
@@ -5186,6 +5548,7 @@
    "name": "Purple Puffle + Disco Dome",
    "rarity": "p",
    "desc": "Puffle de peluche con pelo tipo troll y cuerpo mitad peluche, mitad beanie. Los primeros miden 5\" y tienen todos la misma sonrisa; los posteriores miden 4\" y tienen caras distintas.",
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2026/05/Series-11-Purple-Puffle-with-Disco-Dome-updated.jpg?resize=500%2C500&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game"
@@ -5198,6 +5561,7 @@
    "rarity": "r",
    "note": "Exclusivo Target",
    "desc": "Puffle de peluche con pelo tipo troll y cuerpo mitad peluche, mitad beanie. Los primeros miden 5\" y tienen todos la misma sonrisa; los posteriores miden 4\" y tienen caras distintas.",
+   "coin": true,
    "img": "https://questying.files.wordpress.com/2024/01/series-11-red-puffle-with-top-hat.png?w=138",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game"
@@ -5209,6 +5573,7 @@
    "name": "White Puffle + Night Cap",
    "rarity": "p",
    "desc": "Puffle de peluche con pelo tipo troll y cuerpo mitad peluche, mitad beanie. Los primeros miden 5\" y tienen todos la misma sonrisa; los posteriores miden 4\" y tienen caras distintas.",
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2026/05/Series-11-White-Puffle-with-Night-Cap-updated.jpg?resize=500%2C500&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game"
@@ -5221,6 +5586,7 @@
    "rarity": "r",
    "note": "Exclusivo Toys R Us",
    "desc": "Puffle de peluche con pelo tipo troll y cuerpo mitad peluche, mitad beanie. Los primeros miden 5\" y tienen todos la misma sonrisa; los posteriores miden 4\" y tienen caras distintas.",
+   "coin": true,
    "img": "https://questying.files.wordpress.com/2024/01/series-11-white-puffle-with-blue-toque.png?w=116",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game"
@@ -5232,6 +5598,7 @@
    "name": "Yellow Puffle + Gold Viking Helmet",
    "rarity": "p",
    "desc": "Puffle de peluche con pelo tipo troll y cuerpo mitad peluche, mitad beanie. Los primeros miden 5\" y tienen todos la misma sonrisa; los posteriores miden 4\" y tienen caras distintas.",
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2026/05/Series-11-Yellow-Puffle-with-Gold-Viking-Helmet-updated.jpg?resize=500%2C500&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game"
@@ -5243,6 +5610,7 @@
    "name": "Blue Puffle + All-Star Curls",
    "rarity": "p",
    "desc": "Puffle de peluche con pelo tipo troll y cuerpo mitad peluche, mitad beanie. Los primeros miden 5\" y tienen todos la misma sonrisa; los posteriores miden 4\" y tienen caras distintas.",
+   "coin": true,
    "img": "https://questying.files.wordpress.com/2024/01/series-12-blue-puffle-with-green-bandana.png?w=130",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game"
@@ -5257,6 +5625,7 @@
    "versions": [
     "Series 11"
    ],
+   "coin": true,
    "img": "https://questying.files.wordpress.com/2024/01/series-12-brown-puffle-with-goggles.png?w=150",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game"
@@ -5268,6 +5637,7 @@
    "name": "Green Puffle + Sundae Swirl",
    "rarity": "p",
    "desc": "Puffle de peluche con pelo tipo troll y cuerpo mitad peluche, mitad beanie. Los primeros miden 5\" y tienen todos la misma sonrisa; los posteriores miden 4\" y tienen caras distintas.",
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2024/09/series-12-green-puffle-with-sundae-swirl.png?resize=224%2C245&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game"
@@ -5279,6 +5649,7 @@
    "name": "Orange Puffle + Jester Hat",
    "rarity": "p",
    "desc": "Puffle de peluche con pelo tipo troll y cuerpo mitad peluche, mitad beanie. Los primeros miden 5\" y tienen todos la misma sonrisa; los posteriores miden 4\" y tienen caras distintas.",
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2024/09/series-12-orange-puffle-with-jester-hat.png?resize=261%2C200&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game"
@@ -5290,6 +5661,7 @@
    "name": "Purple Puffle + Princess Braid",
    "rarity": "p",
    "desc": "Puffle de peluche con pelo tipo troll y cuerpo mitad peluche, mitad beanie. Los primeros miden 5\" y tienen todos la misma sonrisa; los posteriores miden 4\" y tienen caras distintas.",
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2024/09/series-12-purple-puffle-with-princess-braid.png?resize=221%2C233&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game"
@@ -5301,6 +5673,7 @@
    "name": "Red Puffle + Surf Swoop",
    "rarity": "p",
    "desc": "Puffle de peluche con pelo tipo troll y cuerpo mitad peluche, mitad beanie. Los primeros miden 5\" y tienen todos la misma sonrisa; los posteriores miden 4\" y tienen caras distintas.",
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2024/09/series-12-red-puffle-with-surf-swoop.png?resize=218%2C256&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game"
@@ -5312,6 +5685,7 @@
    "name": "Yellow Puffle + Sherwood Hat",
    "rarity": "p",
    "desc": "Puffle de peluche con pelo tipo troll y cuerpo mitad peluche, mitad beanie. Los primeros miden 5\" y tienen todos la misma sonrisa; los posteriores miden 4\" y tienen caras distintas.",
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2024/09/series-12-yellow-puffle-with-sherwood-hat.png?resize=193%2C229&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game"
@@ -5323,6 +5697,7 @@
    "name": "Black Puffle + Green 180 Cap",
    "rarity": "r",
    "desc": "Puffle de peluche con pelo tipo troll y cuerpo mitad peluche, mitad beanie. Los primeros miden 5\" y tienen todos la misma sonrisa; los posteriores miden 4\" y tienen caras distintas.",
+   "coin": true,
    "img": "https://questying.files.wordpress.com/2024/01/series-13-black-puffle-with-green-180-cap.png?w=150",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game"
@@ -5334,6 +5709,7 @@
    "name": "Blue Puffle + Swing Batta Batta Hat",
    "rarity": "r",
    "desc": "Puffle de peluche con pelo tipo troll y cuerpo mitad peluche, mitad beanie. Los primeros miden 5\" y tienen todos la misma sonrisa; los posteriores miden 4\" y tienen caras distintas.",
+   "coin": true,
    "img": "https://questying.files.wordpress.com/2024/01/series-13-blue-puffle-with-swing-batta-batta-hat.png?w=150",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game"
@@ -5350,6 +5726,7 @@
     "Series 8",
     "Series 9"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2026/05/Series-13-Brown-Puffle-updated.png?resize=500%2C500&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game",
@@ -5372,6 +5749,7 @@
     "Series 8",
     "Disney Parks"
    ],
+   "coin": true,
    "img": "https://questying.files.wordpress.com/2024/01/series-13-orange-puffle.png?w=135",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game"
@@ -5383,6 +5761,7 @@
    "name": "Red Puffle + Blast Off Cap",
    "rarity": "r",
    "desc": "Puffle de peluche con pelo tipo troll y cuerpo mitad peluche, mitad beanie. Los primeros miden 5\" y tienen todos la misma sonrisa; los posteriores miden 4\" y tienen caras distintas.",
+   "coin": true,
    "img": "https://questying.files.wordpress.com/2024/01/series-13-red-puffle-with-blast-off-cap.png?w=150",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game"
@@ -5394,6 +5773,7 @@
    "name": "Red Puffle + Touchdown Dome",
    "rarity": "r",
    "desc": "Puffle de peluche con pelo tipo troll y cuerpo mitad peluche, mitad beanie. Los primeros miden 5\" y tienen todos la misma sonrisa; los posteriores miden 4\" y tienen caras distintas.",
+   "coin": true,
    "img": "https://questying.files.wordpress.com/2024/01/series-13-red-puffle-with-touchdown-dome.png?w=150",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game"
@@ -5405,6 +5785,7 @@
    "name": "Yellow Puffle + Chocolate Beret",
    "rarity": "r",
    "desc": "Puffle de peluche con pelo tipo troll y cuerpo mitad peluche, mitad beanie. Los primeros miden 5\" y tienen todos la misma sonrisa; los posteriores miden 4\" y tienen caras distintas.",
+   "coin": true,
    "img": "https://questying.files.wordpress.com/2024/01/series-13-yellow-puffle-with-chocolate-beret.png?w=142",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game"
@@ -5429,6 +5810,7 @@
     "Series 9",
     "Disney Parks"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2026/05/Un-Numbered-Series-Pink-Puffle-updated.jpg?resize=269%2C269&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game",
@@ -5457,6 +5839,7 @@
     "Series 10",
     "Disney Parks"
    ],
+   "coin": true,
    "img": "https://questying.files.wordpress.com/2024/01/un-numbered-series-red-puffle.png?w=137",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game"
@@ -5478,6 +5861,7 @@
     "Series 9",
     "Disney Parks"
    ],
+   "coin": true,
    "img": "https://questying.files.wordpress.com/2024/01/un-numbered-series-white-puffle.png?w=133",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game"
@@ -5489,6 +5873,7 @@
    "name": "Green + Blue + Brown",
    "rarity": "r",
    "desc": "Puffle de peluche con pelo tipo troll y cuerpo mitad peluche, mitad beanie. Los primeros miden 5\" y tienen todos la misma sonrisa; los posteriores miden 4\" y tienen caras distintas.",
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2026/05/Puffle-3-Pack-Green-Blue-Brown.jpg?resize=400%2C400&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game"
@@ -5500,6 +5885,7 @@
    "name": "Orange + Black + Yellow",
    "rarity": "r",
    "desc": "Puffle de peluche con pelo tipo troll y cuerpo mitad peluche, mitad beanie. Los primeros miden 5\" y tienen todos la misma sonrisa; los posteriores miden 4\" y tienen caras distintas.",
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2026/05/Puffle-3-Pack-Orange-Black-Yellow.jpg?resize=400%2C400&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game"
@@ -5524,6 +5910,7 @@
     "Series 9",
     "Series 10"
    ],
+   "coin": true,
    "img": "https://questying.files.wordpress.com/2024/01/disney-parks-series-black-puffle.png?w=150",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game"
@@ -5547,6 +5934,7 @@
     "Series 8",
     "Series 9"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2026/05/Disney-Parks-Series-Blue-Puffle-updated.jpg?resize=261%2C261&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game",
@@ -5573,6 +5961,7 @@
     "Series 8",
     "Series 9"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2026/05/Disney-Parks-Series-Green-Puffle-updated.jpg?resize=293%2C300&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game",
@@ -5596,6 +5985,7 @@
     "Series 8",
     "Series 13"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2026/05/Disney-Parks-Series-Orange-Puffle-updated.jpg?resize=293%2C299&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game",
@@ -5624,6 +6014,7 @@
     "Series 9",
     "Standalone"
    ],
+   "coin": true,
    "img": "https://questying.files.wordpress.com/2024/01/disney-parks-series-pink-puffle.png?w=139",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game"
@@ -5646,6 +6037,7 @@
     "Series 7",
     "Series 9"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2026/05/Disney-Parks-Series-Purple-Puffle-updated.jpg?resize=264%2C264&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game",
@@ -5674,6 +6066,7 @@
     "Series 10",
     "Standalone"
    ],
+   "coin": true,
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2026/05/Disney-Parks-Series-Red-Puffle-updated.jpg?resize=280%2C286&ssl=1",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game",
@@ -5699,6 +6092,7 @@
     "Series 9",
     "Standalone"
    ],
+   "coin": true,
    "img": "https://questying.files.wordpress.com/2024/01/disney-parks-series-white-puffle.png?w=122",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game"
@@ -5723,6 +6117,7 @@
     "Series 9",
     "Series 10"
    ],
+   "coin": true,
    "img": "https://questying.files.wordpress.com/2024/01/disney-parks-series-yellow-puffle.png?w=143",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/pet-puffle-plushies/",
    "imgBy": "That Penguin Game"
@@ -5789,6 +6184,7 @@
    "name": "Orange Puffle 6\"",
    "rarity": "p",
    "desc": "Puffle de peluche con pelo tipo troll y cuerpo mitad peluche, mitad beanie. Los primeros miden 5\" y tienen todos la misma sonrisa; los posteriores miden 4\" y tienen caras distintas.",
+   "coin": true,
    "img": "https://cdn11.bigcommerce.com/s-0kvv9/products/236668/images/327620/largeorangepuffle__00697.1519958974.500.750.jpg?c=2",
    "imgSrc": "https://toywiz.com/club-penguin-orange-puffle-6-inch-plush-with-gold-coin/",
    "imgBy": "ToyWiz"
@@ -5835,6 +6231,7 @@
    "note": "Foto de una figura suelta del set",
    "year": "oct. 2008",
    "desc": "Set de figuras de 2\" con cabeza, cuerpo y patas que se separan y combinan con otras figuras.",
+   "coin": true,
    "img": "https://cdn11.bigcommerce.com/s-0kvv9/products/204146/images/288268/clubpenguinrockhopper__01029.1519949120.500.750.jpg?c=2",
    "imgSrc": "https://toywiz.com/club-penguin-rockhopper-2-inch-mini-figure/",
    "imgBy": "ToyWiz"
@@ -5847,6 +6244,7 @@
    "rarity": "c",
    "year": "oct. 2008",
    "desc": "Set de figuras de 2\" con cabeza, cuerpo y patas que se separan y combinan con otras figuras.",
+   "coin": true,
    "img": "https://cdn11.bigcommerce.com/s-0kvv9/products/196038/images/278046/apinok2xq__05212.1550283795.500.750.jpg?c=2",
    "imgSrc": "https://toywiz.com/club-penguin-mix-n-match-series-1-scuba-diver-mermaid-mini-figure-set/",
    "imgBy": "ToyWiz"
@@ -5862,6 +6260,7 @@
    "versions": [
     "Series 4"
    ],
+   "coin": true,
    "img": "https://cdn11.bigcommerce.com/s-0kvv9/products/196047/images/278063/cpmnmcostume__75623.1519946243.500.750.jpg?c=2",
    "imgSrc": "https://toywiz.com/club-penguin-mix-n-match-series-1-bumble-bee-frankenpenguin-mini-figure-set/",
    "imgBy": "ToyWiz"
@@ -5874,6 +6273,7 @@
    "rarity": "c",
    "year": "oct. 2008",
    "desc": "Set de figuras de 2\" con cabeza, cuerpo y patas que se separan y combinan con otras figuras.",
+   "coin": true,
    "img": "https://cdn11.bigcommerce.com/s-0kvv9/products/196037/images/278042/apioqbnow__59420.1550283795.500.750.jpg?c=2",
    "imgSrc": "https://toywiz.com/club-penguin-mix-n-match-series-1-shadow-guy-mild-mannered-reporter-mini-figure-set/",
    "imgBy": "ToyWiz"
@@ -5886,6 +6286,7 @@
    "rarity": "c",
    "year": "oct. 2008",
    "desc": "Set de figuras de 2\" con cabeza, cuerpo y patas que se separan y combinan con otras figuras.",
+   "coin": true,
    "img": "https://cdn11.bigcommerce.com/s-0kvv9/products/196033/images/278033/api9ykltt__66983.1550283795.500.750.jpg?c=2",
    "imgSrc": "https://toywiz.com/club-penguin-mix-n-match-series-1-space-alien-spaceman-mini-figure-set/",
    "imgBy": "ToyWiz"
@@ -5897,7 +6298,8 @@
    "name": "Band Member Party Pack (DJ)",
    "rarity": "c",
    "year": "mar. 2009",
-   "desc": "Multipack de 8–9 figuras Mix 'N Match en una sola caja."
+   "desc": "Multipack de 8–9 figuras Mix 'N Match en una sola caja.",
+   "coin": true
   },
   {
    "id": "mixnmatch-series-2-gary-the-gadget-guy-robot-chase",
@@ -5907,6 +6309,7 @@
    "rarity": "p",
    "year": "mar. 2009",
    "desc": "Set de figuras de 2\" con cabeza, cuerpo y patas que se separan y combinan con otras figuras.",
+   "coin": true,
    "img": "https://cdn11.bigcommerce.com/s-0kvv9/products/146804/images/204191/api5s5a0q__17566.1516122223.500.750.jpg?c=2",
    "imgSrc": "https://toywiz.com/club-penguin-mix-n-match-series-2-gary-the-gadget-guy-with-robot-mini-figure-set/",
    "imgBy": "ToyWiz"
@@ -5918,7 +6321,8 @@
    "name": "Secret Agent + Rookie",
    "rarity": "c",
    "year": "mar. 2009",
-   "desc": "Set de figuras de 2\" con cabeza, cuerpo y patas que se separan y combinan con otras figuras."
+   "desc": "Set de figuras de 2\" con cabeza, cuerpo y patas que se separan y combinan con otras figuras.",
+   "coin": true
   },
   {
    "id": "mixnmatch-series-2-pharaoh-mummy-golden-puffle",
@@ -5928,6 +6332,7 @@
    "rarity": "c",
    "year": "mar. 2009",
    "desc": "Set de figuras de 2\" con cabeza, cuerpo y patas que se separan y combinan con otras figuras.",
+   "coin": true,
    "img": "https://cdn11.bigcommerce.com/s-0kvv9/products/197084/images/279292/apiqkyou9__52007.1520004334.500.750.jpg?c=2",
    "imgSrc": "https://toywiz.com/club-penguin-mix-n-match-series-2-pharaoh-mummy-with-golden-puffle-mini-figure-set/",
    "imgBy": "ToyWiz"
@@ -5943,6 +6348,7 @@
    "versions": [
     "Series 5"
    ],
+   "coin": true,
    "img": "https://cdn11.bigcommerce.com/s-0kvv9/products/197083/images/279287/apibjfnue__91938.1550283798.500.750.jpg?c=2",
    "imgSrc": "https://toywiz.com/club-penguin-mix-n-match-series-2-pajama-bunny-slippers-snowboarder-mini-figure-set/",
    "imgBy": "ToyWiz"
@@ -5955,6 +6361,7 @@
    "rarity": "c",
    "year": "jun. 2009",
    "desc": "Set de figuras de 2\" con cabeza, cuerpo y patas que se separan y combinan con otras figuras.",
+   "coin": true,
    "img": "https://cdn11.bigcommerce.com/s-0kvv9/products/199722/images/282477/apifhupiw__88527.1520004344.500.750.jpg?c=2",
    "imgSrc": "https://toywiz.com/club-penguin-mix-n-match-series-3-marching-band-cheerleader-mini-figure-set/",
    "imgBy": "ToyWiz"
@@ -5967,6 +6374,7 @@
    "rarity": "c",
    "year": "jun. 2009",
    "desc": "Set de figuras de 2\" con cabeza, cuerpo y patas que se separan y combinan con otras figuras.",
+   "coin": true,
    "img": "https://cdn11.bigcommerce.com/s-0kvv9/products/199726/images/282485/apikxz16t__32392.1520004344.500.750.jpg?c=2",
    "imgSrc": "https://toywiz.com/club-penguin-mix-n-match-series-3-sombrero-guy-fiesta-girl-mini-figure-set/",
    "imgBy": "ToyWiz"
@@ -5979,6 +6387,7 @@
    "rarity": "c",
    "year": "jun. 2009",
    "desc": "Set de figuras de 2\" con cabeza, cuerpo y patas que se separan y combinan con otras figuras.",
+   "coin": true,
    "img": "https://cdn11.bigcommerce.com/s-0kvv9/products/199729/images/282493/apiub6gm7__66398.1520004344.500.750.jpg?c=2",
    "imgSrc": "https://toywiz.com/club-penguin-mix-n-match-series-3-bard-12th-fish-costume-mini-figure-set/",
    "imgBy": "ToyWiz"
@@ -5991,6 +6400,7 @@
    "rarity": "c",
    "year": "jun. 2009",
    "desc": "Set de figuras de 2\" con cabeza, cuerpo y patas que se separan y combinan con otras figuras.",
+   "coin": true,
    "img": "https://cdn11.bigcommerce.com/s-0kvv9/products/199721/images/282479/apicbmajq__25704.1550283805.500.750.jpg?c=2",
    "imgSrc": "https://toywiz.com/club-penguin-mix-n-match-series-3-leprechaun-cowboy-mini-figure-set/",
    "imgBy": "ToyWiz"
@@ -6003,6 +6413,7 @@
    "rarity": "c",
    "year": "jun. 2009",
    "desc": "Set de figuras de 2\" con cabeza, cuerpo y patas que se separan y combinan con otras figuras.",
+   "coin": true,
    "img": "https://cdn11.bigcommerce.com/s-0kvv9/products/199727/images/282490/api98vfys__20177.1520004344.500.750.jpg?c=2",
    "imgSrc": "https://toywiz.com/club-penguin-mix-n-match-series-3-aunt-arctic-mini-figure-set/",
    "imgBy": "ToyWiz"
@@ -6015,6 +6426,7 @@
    "rarity": "c",
    "note": "Foto de una figura suelta del set",
    "desc": "Set de figuras de 2\" con cabeza, cuerpo y patas que se separan y combinan con otras figuras.",
+   "coin": true,
    "img": "https://cdn11.bigcommerce.com/s-0kvv9/products/200813/images/283838/clubpenguinfaery__05510.1519947816.500.750.jpg?c=2",
    "imgSrc": "https://toywiz.com/club-penguin-faery-2-inch-mini-figure/",
    "imgBy": "ToyWiz"
@@ -6029,6 +6441,7 @@
    "versions": [
     "Series 1"
    ],
+   "coin": true,
    "img": "https://cdn11.bigcommerce.com/s-0kvv9/products/200652/images/283627/api01gozb__10375.1520004352.500.750.jpg?c=2",
    "imgSrc": "https://toywiz.com/club-penguin-mix-n-match-series-4-bumble-bee-frankenpenguin-mini-figure-set/",
    "imgBy": "ToyWiz"
@@ -6039,7 +6452,8 @@
    "group": "Series 4",
    "name": "Camper + Fisherman",
    "rarity": "c",
-   "desc": "Set de figuras de 2\" con cabeza, cuerpo y patas que se separan y combinan con otras figuras."
+   "desc": "Set de figuras de 2\" con cabeza, cuerpo y patas que se separan y combinan con otras figuras.",
+   "coin": true
   },
   {
    "id": "mixnmatch-series-4-lifeguard-snorkeler",
@@ -6048,6 +6462,7 @@
    "name": "Lifeguard + Snorkeler",
    "rarity": "c",
    "desc": "Set de figuras de 2\" con cabeza, cuerpo y patas que se separan y combinan con otras figuras.",
+   "coin": true,
    "img": "https://cdn11.bigcommerce.com/s-0kvv9/products/200653/images/283630/apiowookx__67606.1550283812.500.750.jpg?c=2",
    "imgSrc": "https://toywiz.com/club-penguin-mix-n-match-series-4-lifeguard-snorkeler-mini-figure-set/",
    "imgBy": "ToyWiz"
@@ -6062,6 +6477,7 @@
    "versions": [
     "Series 8"
    ],
+   "coin": true,
    "img": "https://cdn11.bigcommerce.com/s-0kvv9/products/200654/images/283631/apixd3xjl__72895.1520004352.500.750.jpg?c=2",
    "imgSrc": "https://toywiz.com/club-penguin-mix-n-match-series-4-herbert-p-bear-esquire-and-klutzy-the-crab-mini-figure-set/",
    "imgBy": "ToyWiz"
@@ -6077,6 +6493,7 @@
    "versions": [
     "Series 2"
    ],
+   "coin": true,
    "img": "https://cdn11.bigcommerce.com/s-0kvv9/products/204388/images/288557/clubpenguinpajama__30851.1519949214.500.750.jpg?c=2",
    "imgSrc": "https://toywiz.com/club-penguin-mix-n-match-series-5-pajama-bunny-slippers-snowboarder-mini-figure-set/",
    "imgBy": "ToyWiz"
@@ -6089,6 +6506,7 @@
    "rarity": "c",
    "year": "nov. 2009",
    "desc": "Set de figuras de 2\" con cabeza, cuerpo y patas que se separan y combinan con otras figuras.",
+   "coin": true,
    "img": "https://cdn11.bigcommerce.com/s-0kvv9/products/203629/images/287608/apix0po1v__57481.1520004360.500.750.jpg?c=2",
    "imgSrc": "https://toywiz.com/club-penguin-mix-n-match-series-5-knight-ninja-mini-figure-set/",
    "imgBy": "ToyWiz"
@@ -6105,6 +6523,7 @@
    "versions": [
     "Series 8"
    ],
+   "coin": true,
    "img": "https://cdn11.bigcommerce.com/s-0kvv9/products/204141/images/288265/clubpenguinsenseifigure__49360.1519949119.500.750.jpg?c=2",
    "imgSrc": "https://toywiz.com/club-penguin-sensei-2-inch-mini-figure/",
    "imgBy": "ToyWiz",
@@ -6121,6 +6540,7 @@
    "rarity": "c",
    "year": "nov. 2009",
    "desc": "Set de figuras de 2\" con cabeza, cuerpo y patas que se separan y combinan con otras figuras.",
+   "coin": true,
    "img": "https://cdn11.bigcommerce.com/s-0kvv9/products/203635/images/287617/apibzc9b8__35577.1520004360.500.750.jpg?c=2",
    "imgSrc": "https://toywiz.com/club-penguin-mix-n-match-series-5-gamma-girl-squidzoid-mini-figure-set/",
    "imgBy": "ToyWiz"
@@ -6133,6 +6553,7 @@
    "rarity": "c",
    "year": "nov. 2009",
    "desc": "Set de figuras de 2\" con cabeza, cuerpo y patas que se separan y combinan con otras figuras.",
+   "coin": true,
    "img": "https://cdn11.bigcommerce.com/s-0kvv9/products/203633/images/287613/apibcc6c8__57325.1520004360.500.750.jpg?c=2",
    "imgSrc": "https://toywiz.com/club-penguin-mix-n-match-series-5-ruby-rockstar-mini-figure-set/",
    "imgBy": "ToyWiz"
@@ -6145,6 +6566,7 @@
    "rarity": "c",
    "year": "ene. 2010",
    "desc": "Set de figuras de 2\" con cabeza, cuerpo y patas que se separan y combinan con otras figuras.",
+   "coin": true,
    "img": "https://cdn11.bigcommerce.com/s-0kvv9/products/204823/images/289237/api9vight__34268.1520004366.500.750.jpg?c=2",
    "imgSrc": "https://toywiz.com/club-penguin-mix-n-match-series-6-figure-skater-hockey-player-red-jersey-mini-figure-set/",
    "imgBy": "ToyWiz"
@@ -6157,6 +6579,7 @@
    "rarity": "c",
    "year": "ene. 2010",
    "desc": "Set de figuras de 2\" con cabeza, cuerpo y patas que se separan y combinan con otras figuras.",
+   "coin": true,
    "img": "https://cdn11.bigcommerce.com/s-0kvv9/products/204819/images/289230/apiz0yjp7__65217.1520004367.500.750.jpg?c=2",
    "imgSrc": "https://toywiz.com/club-penguin-mix-n-match-series-6-firefighter-construction-worker-mini-figure-set/",
    "imgBy": "ToyWiz"
@@ -6169,6 +6592,7 @@
    "rarity": "c",
    "year": "ene. 2010",
    "desc": "Set de figuras de 2\" con cabeza, cuerpo y patas que se separan y combinan con otras figuras.",
+   "coin": true,
    "img": "https://cdn11.bigcommerce.com/s-0kvv9/products/204815/images/289222/apisrq9qb__35059.1520004367.500.750.jpg?c=2",
    "imgSrc": "https://toywiz.com/club-penguin-mix-n-match-series-6-court-jester-king-mini-figure-set/",
    "imgBy": "ToyWiz"
@@ -6180,6 +6604,7 @@
    "name": "Cadence",
    "rarity": "c",
    "desc": "Set de figuras de 2\" con cabeza, cuerpo y patas que se separan y combinan con otras figuras.",
+   "coin": true,
    "img": "https://cdn11.bigcommerce.com/s-0kvv9/products/204826/images/289240/apinyprbl__33301.1520004367.500.750.jpg?c=2",
    "imgSrc": "https://toywiz.com/club-penguin-mix-n-match-series-6-cadence-mini-figure-set/",
    "imgBy": "ToyWiz"
@@ -6192,6 +6617,7 @@
    "rarity": "c",
    "year": "mar. 2010",
    "desc": "Set de figuras de 2\" con cabeza, cuerpo y patas que se separan y combinan con otras figuras.",
+   "coin": true,
    "img": "https://cdn11.bigcommerce.com/s-0kvv9/products/206177/images/291044/apitaxlyx__60298.1520004372.500.750.jpg?c=2",
    "imgSrc": "https://toywiz.com/club-penguin-mix-n-match-series-7-band-member-party-set-mini-figure-set/",
    "imgBy": "ToyWiz"
@@ -6205,6 +6631,7 @@
    "note": "Foto de una figura suelta del set",
    "year": "mar. 2010",
    "desc": "Set de figuras de 2\" con cabeza, cuerpo y patas que se separan y combinan con otras figuras.",
+   "coin": true,
    "img": "https://cdn11.bigcommerce.com/s-0kvv9/products/241723/images/334146/penguinreferee__95265.1519972615.500.750.jpg?c=2",
    "imgSrc": "https://toywiz.com/club-penguin-referee-2-inch-mini-figure/",
    "imgBy": "ToyWiz"
@@ -6218,6 +6645,7 @@
    "note": "Foto de una figura suelta del set",
    "year": "mar. 2010",
    "desc": "Set de figuras de 2\" con cabeza, cuerpo y patas que se separan y combinan con otras figuras.",
+   "coin": true,
    "img": "https://cdn11.bigcommerce.com/s-0kvv9/products/206174/images/291040/penguinbunnycos__26373.1519949927.500.750.jpg?c=2",
    "imgSrc": "https://toywiz.com/club-penguin-bunny-costume-2-inch-mini-figure/",
    "imgBy": "ToyWiz"
@@ -6231,6 +6659,7 @@
    "note": "Foto de una figura suelta del set",
    "year": "mar. 2010",
    "desc": "Set de figuras de 2\" con cabeza, cuerpo y patas que se separan y combinan con otras figuras.",
+   "coin": true,
    "img": "https://cdn11.bigcommerce.com/s-0kvv9/products/198154/images/280524/clubpenguinpharaoh__89360.1519946883.500.750.jpg?c=2",
    "imgSrc": "https://toywiz.com/club-penguin-pharaoh-2-inch-mini-figure/",
    "imgBy": "ToyWiz"
@@ -6242,6 +6671,7 @@
    "name": "Rockhopper",
    "rarity": "c",
    "desc": "Set de figuras de 2\" con cabeza, cuerpo y patas que se separan y combinan con otras figuras.",
+   "coin": true,
    "img": "https://cdn11.bigcommerce.com/s-0kvv9/products/206180/images/291059/apiiejfmv__62497.1520004372.500.750.jpg?c=2",
    "imgSrc": "https://toywiz.com/club-penguin-mix-n-match-series-7-rockhopper-mini-figure-set/",
    "imgBy": "ToyWiz"
@@ -6254,6 +6684,7 @@
    "rarity": "p",
    "year": "jul. 2010",
    "desc": "Set de figuras de 2\" con cabeza, cuerpo y patas que se separan y combinan con otras figuras.",
+   "coin": true,
    "img": "https://cdn11.bigcommerce.com/s-0kvv9/products/239820/images/331390/apiqj1c3u__85218.1520004379.500.750.jpg?c=2",
    "imgSrc": "https://toywiz.com/club-penguin-mix-n-match-series-8-ranger-ninja-mini-figure-set/",
    "imgBy": "ToyWiz"
@@ -6266,6 +6697,7 @@
    "rarity": "p",
    "year": "jul. 2010",
    "desc": "Set de figuras de 2\" con cabeza, cuerpo y patas que se separan y combinan con otras figuras.",
+   "coin": true,
    "img": "https://cdn11.bigcommerce.com/s-0kvv9/products/239823/images/331393/apigwrui2__63279.1520004379.500.750.jpg?c=2",
    "imgSrc": "https://toywiz.com/club-penguin-mix-n-match-series-8-tuxedo-guy-prom-girl-mini-figure-set/",
    "imgBy": "ToyWiz"
@@ -6277,7 +6709,8 @@
    "name": "Jet Pack Guy + Rookie (EPF)",
    "rarity": "p",
    "year": "jul. 2010",
-   "desc": "Set de figuras de 2\" con cabeza, cuerpo y patas que se separan y combinan con otras figuras."
+   "desc": "Set de figuras de 2\" con cabeza, cuerpo y patas que se separan y combinan con otras figuras.",
+   "coin": true
   },
   {
    "id": "mixnmatch-series-8-herbert-p-bear-klutzy",
@@ -6290,6 +6723,7 @@
    "versions": [
     "Series 4"
    ],
+   "coin": true,
    "img": "https://cdn11.bigcommerce.com/s-0kvv9/products/239829/images/331399/apiq8gbzi__06588.1520004379.500.750.jpg?c=2",
    "imgSrc": "https://toywiz.com/club-penguin-mix-n-match-series-8-herbert-p-bear-esquire-klutzy-the-crab-mini-figure-set/",
    "imgBy": "ToyWiz"
@@ -6306,6 +6740,7 @@
    "versions": [
     "Series 5"
    ],
+   "coin": true,
    "img": "https://cdn11.bigcommerce.com/s-0kvv9/products/204141/images/288265/clubpenguinsenseifigure__49360.1519949119.500.750.jpg?c=2",
    "imgSrc": "https://toywiz.com/club-penguin-sensei-2-inch-mini-figure/",
    "imgBy": "ToyWiz",
@@ -6321,7 +6756,8 @@
    "name": "Blue Dragon",
    "rarity": "p",
    "year": "jul. 2010",
-   "desc": "Set de figuras de 2\" con cabeza, cuerpo y patas que se separan y combinan con otras figuras."
+   "desc": "Set de figuras de 2\" con cabeza, cuerpo y patas que se separan y combinan con otras figuras.",
+   "coin": true
   },
   {
    "id": "mixnmatch-series-9-football-player-cheerleader",
@@ -6331,6 +6767,7 @@
    "rarity": "p",
    "year": "sep. 2010",
    "desc": "Set de figuras de 2\" con cabeza, cuerpo y patas que se separan y combinan con otras figuras.",
+   "coin": true,
    "img": "https://cdn11.bigcommerce.com/s-0kvv9/products/216073/images/302803/apiirzxnm__20812.1520004389.500.750.jpg?c=2",
    "imgSrc": "https://toywiz.com/club-penguin-mix-n-match-series-9-football-player-cheerleader-mini-figure-set/",
    "imgBy": "ToyWiz"
@@ -6343,6 +6780,7 @@
    "rarity": "p",
    "year": "sep. 2010",
    "desc": "Set de figuras de 2\" con cabeza, cuerpo y patas que se separan y combinan con otras figuras.",
+   "coin": true,
    "img": "https://cdn11.bigcommerce.com/s-0kvv9/products/216113/images/302851/apiues5pr__04893.1520004389.500.750.jpg?c=2",
    "imgSrc": "https://toywiz.com/club-penguin-mix-n-match-series-9-blizzard-wizzard-medieval-dress-mini-figure-set/",
    "imgBy": "ToyWiz"
@@ -6355,6 +6793,7 @@
    "rarity": "p",
    "year": "sep. 2010",
    "desc": "Set de figuras de 2\" con cabeza, cuerpo y patas que se separan y combinan con otras figuras.",
+   "coin": true,
    "img": "https://cdn11.bigcommerce.com/s-0kvv9/products/216085/images/302815/apicuvyiw__84877.1550283842.500.750.jpg?c=2",
    "imgSrc": "https://toywiz.com/club-penguin-mix-n-match-series-9-shadow-guy-gamma-girl-mini-figure-set/",
    "imgBy": "ToyWiz"
@@ -6366,6 +6805,7 @@
    "name": "Cadence + Turntable",
    "rarity": "p",
    "desc": "Set de figuras de 2\" con cabeza, cuerpo y patas que se separan y combinan con otras figuras.",
+   "coin": true,
    "img": "https://cdn11.bigcommerce.com/s-0kvv9/products/216089/images/302823/apinp2fai__20621.1520004389.500.750.jpg?c=2",
    "imgSrc": "https://toywiz.com/club-penguin-mix-n-match-series-9-cadence-turntable-mini-figure-set/",
    "imgBy": "ToyWiz"
@@ -6380,6 +6820,7 @@
    "versions": [
     "Series 2"
    ],
+   "coin": true,
    "img": "https://cdn11.bigcommerce.com/s-0kvv9/products/216109/images/302846/apiliqoz7__42310.1520004389.500.750.jpg?c=2",
    "imgSrc": "https://toywiz.com/club-penguin-mix-n-match-series-9-gary-the-gadget-guy-robot-mini-figure-set/",
    "imgBy": "ToyWiz"
@@ -6393,6 +6834,7 @@
    "note": "Foto de una figura suelta del set",
    "year": "feb.–mar. 2011",
    "desc": "Set de figuras de 2\" con cabeza, cuerpo y patas que se separan y combinan con otras figuras.",
+   "coin": true,
    "img": "https://cdn11.bigcommerce.com/s-0kvv9/products/204141/images/288265/clubpenguinsenseifigure__49360.1519949119.500.750.jpg?c=2",
    "imgSrc": "https://toywiz.com/club-penguin-sensei-2-inch-mini-figure/",
    "imgBy": "ToyWiz",
@@ -6409,6 +6851,7 @@
    "rarity": "p",
    "year": "feb.–mar. 2011",
    "desc": "Set de figuras de 2\" con cabeza, cuerpo y patas que se separan y combinan con otras figuras.",
+   "coin": true,
    "img": "https://cdn11.bigcommerce.com/s-0kvv9/products/220293/images/307781/api98izld__88517.1520004406.500.750.jpg?c=2",
    "imgSrc": "https://toywiz.com/club-penguin-mix-n-match-series-10-yellow-team-green-team-cheerleader-mini-figure-set/",
    "imgBy": "ToyWiz"
@@ -6420,7 +6863,8 @@
    "name": "Red Team + Blue Cheerleader",
    "rarity": "p",
    "year": "feb.–mar. 2011",
-   "desc": "Set de figuras de 2\" con cabeza, cuerpo y patas que se separan y combinan con otras figuras."
+   "desc": "Set de figuras de 2\" con cabeza, cuerpo y patas que se separan y combinan con otras figuras.",
+   "coin": true
   },
   {
    "id": "mixnmatch-series-10-aunt-arctic-con-escritorio",
@@ -6430,6 +6874,7 @@
    "rarity": "p",
    "year": "feb.–mar. 2011",
    "desc": "Set de figuras de 2\" con cabeza, cuerpo y patas que se separan y combinan con otras figuras.",
+   "coin": true,
    "img": "https://cdn11.bigcommerce.com/s-0kvv9/products/219320/images/306657/api7ln11n__15742.1520004404.500.750.jpg?c=2",
    "imgSrc": "https://toywiz.com/club-penguin-mix-n-match-series-10-aunt-arctic-with-writing-mini-figure-set/",
    "imgBy": "ToyWiz"
@@ -6441,6 +6886,7 @@
    "name": "Dot + Spy Phone",
    "rarity": "p",
    "desc": "Set de figuras de 2\" con cabeza, cuerpo y patas que se separan y combinan con otras figuras.",
+   "coin": true,
    "img": "https://cdn11.bigcommerce.com/s-0kvv9/products/220288/images/307772/apilv5vo2__97970.1520004406.500.750.jpg?c=2",
    "imgSrc": "https://toywiz.com/club-penguin-mix-n-match-series-10-dot-with-spy-phone-headgear-mini-figure-set/",
    "imgBy": "ToyWiz"
@@ -6452,6 +6898,7 @@
    "name": "Band Member + Turntable",
    "rarity": "r",
    "desc": "Set de figuras de 2\" con cabeza, cuerpo y patas que se separan y combinan con otras figuras.",
+   "coin": true,
    "img": "https://cdn11.bigcommerce.com/s-0kvv9/products/197086/images/279295/apiyyunp2__95808.1520004333.500.750.jpg?c=2",
    "imgSrc": "https://toywiz.com/club-penguin-mix-n-match-series-11-band-member-with-turntable-mini-figure-set/",
    "imgBy": "ToyWiz"
@@ -6462,7 +6909,8 @@
    "group": "Series 11",
    "name": "Blue Hockey Player + Figure Skater",
    "rarity": "r",
-   "desc": "Set de figuras de 2\" con cabeza, cuerpo y patas que se separan y combinan con otras figuras."
+   "desc": "Set de figuras de 2\" con cabeza, cuerpo y patas que se separan y combinan con otras figuras.",
+   "coin": true
   },
   {
    "id": "mixnmatch-series-11-squidzoid-12th-fish",
@@ -6471,6 +6919,7 @@
    "name": "Squidzoid + 12th Fish",
    "rarity": "r",
    "desc": "Set de figuras de 2\" con cabeza, cuerpo y patas que se separan y combinan con otras figuras.",
+   "coin": true,
    "img": "https://cdn11.bigcommerce.com/s-0kvv9/products/219297/images/306630/squidzoid12fish10__30610.1519954322.500.750.jpg?c=2",
    "imgSrc": "https://toywiz.com/club-penguin-mix-n-match-series-11-squidzoid-12th-fish-mini-figure-set/",
    "imgBy": "ToyWiz"
@@ -6481,7 +6930,8 @@
    "group": "Multipacks",
    "name": "Mascots Pack",
    "rarity": "r",
-   "desc": "Multipack de 8–9 figuras Mix 'N Match en una sola caja."
+   "desc": "Multipack de 8–9 figuras Mix 'N Match en una sola caja.",
+   "coin": true
   },
   {
    "id": "mixnmatch-multipacks-herbert-pack",
@@ -6489,7 +6939,8 @@
    "group": "Multipacks",
    "name": "Herbert Pack",
    "rarity": "r",
-   "desc": "Multipack de 8–9 figuras Mix 'N Match en una sola caja."
+   "desc": "Multipack de 8–9 figuras Mix 'N Match en una sola caja.",
+   "coin": true
   },
   {
    "id": "mixnmatch-multipacks-blue-dragon-pack",
@@ -6497,7 +6948,8 @@
    "group": "Multipacks",
    "name": "Blue Dragon Pack",
    "rarity": "r",
-   "desc": "Multipack de 8–9 figuras Mix 'N Match en una sola caja."
+   "desc": "Multipack de 8–9 figuras Mix 'N Match en una sola caja.",
+   "coin": true
   },
   {
    "id": "mixnmatch-multipacks-green-dragon-pack-drago-n-verde-exclusivo",
@@ -6505,7 +6957,8 @@
    "group": "Multipacks",
    "name": "Green Dragon Pack (dragón verde exclusivo)",
    "rarity": "m",
-   "desc": "Multipack de 8–9 figuras Mix 'N Match en una sola caja."
+   "desc": "Multipack de 8–9 figuras Mix 'N Match en una sola caja.",
+   "coin": true
   },
   {
    "id": "mixnmatch-multipacks-rockhopper-pack",
@@ -6513,7 +6966,8 @@
    "group": "Multipacks",
    "name": "Rockhopper Pack",
    "rarity": "r",
-   "desc": "Multipack de 8–9 figuras Mix 'N Match en una sola caja."
+   "desc": "Multipack de 8–9 figuras Mix 'N Match en una sola caja.",
+   "coin": true
   },
   {
    "id": "mixnmatch-multipacks-wizard-pack",
@@ -6521,7 +6975,8 @@
    "group": "Multipacks",
    "name": "Wizard Pack",
    "rarity": "r",
-   "desc": "Multipack de 8–9 figuras Mix 'N Match en una sola caja."
+   "desc": "Multipack de 8–9 figuras Mix 'N Match en una sola caja.",
+   "coin": true
   },
   {
    "id": "mixnmatch-playsets-igloo-playset",
@@ -6529,7 +6984,8 @@
    "group": "Playsets",
    "name": "Igloo Playset",
    "rarity": "p",
-   "desc": "Playset para las figuras Mix 'N Match, con escenario y figuras incluidas."
+   "desc": "Playset para las figuras Mix 'N Match, con escenario y figuras incluidas.",
+   "coin": true
   },
   {
    "id": "mixnmatch-playsets-snow-trekker-playset",
@@ -6538,6 +6994,7 @@
    "name": "Snow Trekker Playset",
    "rarity": "r",
    "desc": "Playset para las figuras Mix 'N Match, con escenario y figuras incluidas.",
+   "coin": true,
    "img": "https://cdn11.bigcommerce.com/s-0kvv9/products/199911/images/282717/apixgcmkk__14070.1550283805.500.750.jpg?c=2",
    "imgSrc": "https://toywiz.com/club-penguin-snowtrekker-vehicle-set/",
    "imgBy": "ToyWiz"
@@ -6548,7 +7005,8 @@
    "group": "Playsets",
    "name": "Herbert's Drill",
    "rarity": "r",
-   "desc": "Set de figuras de 2\" con cabeza, cuerpo y patas que se separan y combinan con otras figuras."
+   "desc": "Set de figuras de 2\" con cabeza, cuerpo y patas que se separan y combinan con otras figuras.",
+   "coin": true
   },
   {
    "id": "mixnmatch-playsets-air-hockey-playset",
@@ -6557,6 +7015,7 @@
    "name": "Air Hockey Playset",
    "rarity": "m",
    "desc": "Playset para las figuras Mix 'N Match, con escenario y figuras incluidas.",
+   "coin": true,
    "img": "https://cdn11.bigcommerce.com/s-0kvv9/products/207895/images/293608/apilxgaln__72426.1520004383.500.750.jpg?c=2",
    "imgSrc": "https://toywiz.com/club-penguin-air-hockey-playset/",
    "imgBy": "ToyWiz"
@@ -6585,6 +7044,7 @@
    "name": "Big Air Launcher",
    "rarity": "r",
    "desc": "Set de figuras de 2\" con cabeza, cuerpo y patas que se separan y combinan con otras figuras.",
+   "coin": true,
    "img": "https://cdn11.bigcommerce.com/s-0kvv9/products/141166/images/196657/apib7nswr__05870.1516122363.500.750.jpg?c=2",
    "imgSrc": "https://toywiz.com/club-penguin-puffle-world-big-air-launcher-1-inch-playset/",
    "imgBy": "ToyWiz"
@@ -6596,6 +7056,7 @@
    "name": "Bowling Alley",
    "rarity": "r",
    "desc": "Set de figuras de 2\" con cabeza, cuerpo y patas que se separan y combinan con otras figuras.",
+   "coin": true,
    "img": "https://cdn11.bigcommerce.com/s-0kvv9/products/217122/images/304164/apiy0lula__01340.1520004394.500.750.jpg?c=2",
    "imgSrc": "https://toywiz.com/club-penguin-puffle-world-bowling-alley-1-inch-playset/",
    "imgBy": "ToyWiz"
@@ -6607,9 +7068,28 @@
    "name": "Skate Park",
    "rarity": "r",
    "desc": "Set de figuras de 2\" con cabeza, cuerpo y patas que se separan y combinan con otras figuras.",
+   "coin": true,
    "img": "https://cdn11.bigcommerce.com/s-0kvv9/products/242306/images/334745/apia9frqu__85547.1541524275.500.750.jpg?c=2",
    "imgSrc": "https://toywiz.com/club-penguin-puffle-world-skate-park-1-inch-playset/",
    "imgBy": "ToyWiz"
+  },
+  {
+   "id": "mixnmatch-blind-bags-uk-2012-blind-bag-sellado",
+   "cat": "mixnmatch",
+   "group": "Blind bags UK (2012)",
+   "name": "Blind bag sellado",
+   "rarity": "m",
+   "desc": "Set de figuras de 2\" con cabeza, cuerpo y patas que se separan y combinan con otras figuras.",
+   "coin": true
+  },
+  {
+   "id": "mixnmatch-blind-bags-uk-2012-caja-exhibidora-de-blind-bags",
+   "cat": "mixnmatch",
+   "group": "Blind bags UK (2012)",
+   "name": "Caja exhibidora de blind bags",
+   "rarity": "x",
+   "desc": "Set de figuras de 2\" con cabeza, cuerpo y patas que se separan y combinan con otras figuras.",
+   "coin": true
   },
   {
    "id": "cards-sets-completos-set-1-club-penguin-tcg-2008-2010",
@@ -8715,83 +9195,6 @@
    "imgBy": "That Penguin Game"
   },
   {
-   "id": "misc-ibitz-powerkey-black",
-   "cat": "misc",
-   "group": "iBitz PowerKey",
-   "name": "Black",
-   "rarity": "p",
-   "desc": "Mercancía oficial menos conocida.",
-   "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2024/09/black-ibitz-powerkey-e1775168162484.png?resize=150%2C150&ssl=1",
-   "imgSrc": "https://thatpenguingame.com/club-penguin-toys/miscellaneous/",
-   "imgBy": "That Penguin Game"
-  },
-  {
-   "id": "misc-ibitz-powerkey-blue",
-   "cat": "misc",
-   "group": "iBitz PowerKey",
-   "name": "Blue",
-   "rarity": "p",
-   "desc": "Mercancía oficial menos conocida.",
-   "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2024/09/blue-ibitz-powerkey-e1775168175120.png?resize=150%2C150&ssl=1",
-   "imgSrc": "https://thatpenguingame.com/club-penguin-toys/miscellaneous/",
-   "imgBy": "That Penguin Game"
-  },
-  {
-   "id": "misc-ibitz-powerkey-green",
-   "cat": "misc",
-   "group": "iBitz PowerKey",
-   "name": "Green",
-   "rarity": "p",
-   "desc": "Mercancía oficial menos conocida.",
-   "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2024/09/green-ibitz-powerkey-e1775168189271.png?resize=150%2C150&ssl=1",
-   "imgSrc": "https://thatpenguingame.com/club-penguin-toys/miscellaneous/",
-   "imgBy": "That Penguin Game"
-  },
-  {
-   "id": "misc-ibitz-powerkey-orange",
-   "cat": "misc",
-   "group": "iBitz PowerKey",
-   "name": "Orange",
-   "rarity": "p",
-   "desc": "Mercancía oficial menos conocida.",
-   "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2024/09/orange-ibitz-powerkey-e1775168208939.png?resize=150%2C150&ssl=1",
-   "imgSrc": "https://thatpenguingame.com/club-penguin-toys/miscellaneous/",
-   "imgBy": "That Penguin Game"
-  },
-  {
-   "id": "misc-ibitz-powerkey-pink",
-   "cat": "misc",
-   "group": "iBitz PowerKey",
-   "name": "Pink",
-   "rarity": "p",
-   "desc": "Mercancía oficial menos conocida.",
-   "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2024/09/pink-ibitz-powerkey-e1775168220366.png?resize=150%2C150&ssl=1",
-   "imgSrc": "https://thatpenguingame.com/club-penguin-toys/miscellaneous/",
-   "imgBy": "That Penguin Game"
-  },
-  {
-   "id": "misc-ibitz-powerkey-purple",
-   "cat": "misc",
-   "group": "iBitz PowerKey",
-   "name": "Purple",
-   "rarity": "p",
-   "desc": "Mercancía oficial menos conocida.",
-   "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2024/09/purple-ibitz-powerkey-e1775168237924.png?resize=150%2C150&ssl=1",
-   "imgSrc": "https://thatpenguingame.com/club-penguin-toys/miscellaneous/",
-   "imgBy": "That Penguin Game"
-  },
-  {
-   "id": "misc-ibitz-powerkey-red",
-   "cat": "misc",
-   "group": "iBitz PowerKey",
-   "name": "Red",
-   "rarity": "p",
-   "desc": "Mercancía oficial menos conocida.",
-   "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2024/09/red-ibitz-powerkey-e1775168249482.png?resize=150%2C150&ssl=1",
-   "imgSrc": "https://thatpenguingame.com/club-penguin-toys/miscellaneous/",
-   "imgBy": "That Penguin Game"
-  },
-  {
    "id": "misc-memorias-usb-cadence",
    "cat": "misc",
    "group": "Memorias USB",
@@ -8854,6 +9257,18 @@
    "rarity": "m",
    "desc": "Mercancía oficial menos conocida.",
    "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2025/06/1_b5aadb2704c5408a10d16b8882c59c23-1-e1775168465939.jpg?resize=150%2C150&ssl=1",
+   "imgSrc": "https://thatpenguingame.com/club-penguin-toys/miscellaneous/",
+   "imgBy": "That Penguin Game"
+  },
+  {
+   "id": "misc-colaboraciones-ibitz-powerkey-geopalz",
+   "cat": "misc",
+   "group": "Colaboraciones",
+   "name": "iBitz PowerKey (GeoPalz)",
+   "rarity": "p",
+   "note": "Contador de pasos que daba monedas en el juego (2013–2014)",
+   "desc": "Mercancía oficial menos conocida.",
+   "img": "https://i0.wp.com/thatpenguingame.com/wp-content/uploads/2024/09/black-ibitz-powerkey-e1775168162484.png",
    "imgSrc": "https://thatpenguingame.com/club-penguin-toys/miscellaneous/",
    "imgBy": "That Penguin Game"
   },

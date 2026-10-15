@@ -1,6 +1,6 @@
 # Iglú de Colección
 
-Catálogo y tracker personal del merch oficial de Club Penguin (2008–2013): peluches, puffles, figuras Mix 'N Match, cartas Card-Jitsu, pines, libros, revistas, tarjetas de membresía, videojuegos y más. 593 artículos con rareza estimada, descripción, guía para saber si es original y enlaces a ventas reales en eBay.
+Catálogo y tracker personal del merch oficial de Club Penguin (2008–2013): peluches, puffles, figuras Mix 'N Match, cartas Card-Jitsu, pines, libros, revistas, tarjetas de membresía, videojuegos y más. 599 artículos con rareza estimada, descripción, guía para saber si es original y enlaces a ventas reales en eBay.
 
 Es una app web instalable (PWA): funciona sin conexión una vez abierta y se puede agregar a la pantalla de inicio del celular.
 
@@ -8,6 +8,7 @@ Es una app web instalable (PWA): funciona sin conexión una vez abierta y se pue
 
 - **Buscar:** por nombre, serie (`series 7` o `s7`), categoría o color en español (`puffle rosa`). La tecla `/` enfoca el buscador.
 - **Marcar:** el círculo ✓ de cada tarjeta. Las cartas Card-Jitsu y las revistas en español/portugués llevan contador.
+- **Monedas:** las piezas que venían con moneda dorada muestran "○ Moneda". En la ficha marcas si tienes la moneda y si el código está sin usar; el filtro *Sin moneda* lista lo que tienes sin ella.
 - **Ficha:** toca una tarjeta. Trae foto, descripción, otras versiones del mismo traje, precio pagado, fecha, notas y tu propia foto.
 - **Respaldo:** menú ⋯ → Exportar / Importar. El progreso vive en el navegador de cada dispositivo; el archivo `.json` sirve para pasarlo entre el celular y el PC. Importar combina, no borra.
 
