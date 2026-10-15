@@ -1,6 +1,6 @@
 // Service worker: app offline. Código y catálogo: red primero (para recibir cambios), caché de respaldo.
 // Fotos externas: caché primero, máximo 600 entradas.
-const SHELL = "iglu-shell-v2", IMGS = "iglu-img-v1";
+const SHELL = "iglu-shell-v3", IMGS = "iglu-img-v1";
 const FILES = ["./", "index.html", "css/app.css", "js/app.js", "data/catalog.json", "manifest.webmanifest", "icons/icon.svg", "icons/icon-192.png"];
 self.addEventListener("install", e => { e.waitUntil(caches.open(SHELL).then(c => c.addAll(FILES))); self.skipWaiting() });
 self.addEventListener("activate", e => {

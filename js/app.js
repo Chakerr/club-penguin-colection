@@ -97,6 +97,12 @@ function visible() {
 }
 
 /* ---------- render ---------- */
+const COLOR_HEX = { black: "#2b2b2b", blue: "#3d9be9", green: "#4cbf4c", pink: "#f59ac5", purple: "#9461d6", red: "#e2363b", yellow: "#f4d228",
+  white: "#f4f4f4", orange: "#f5902a", brown: "#8a5a3a", gold: "#d9a92b", rojo: "#e2363b", naranja: "#f5902a", morado: "#9461d6" };
+const colorOf = it => { const m = norm(it.name).match(/\b(black|blue|green|pink|purple|red|yellow|white|orange|brown|gold|rojo|naranja|morado)\b/); return m && COLOR_HEX[m[1]] };
+const shortGroup = g => g.replace(/^Series (\d+)/, "Serie $1").replace(/^Sellado · /, "").replace(/ \(.*\)$/, "").replace(/^Mystery Pins /, "Mystery ");
+const browsing = () => ui.cat === "all" && !query && ui.own === "all" && !ui.rar && ui.sort === "cat";
+
 function render() {
   const [g, t] = sum(CAT.items);
   const pct = t ? Math.round(g / t * 1000) / 10 : 0;
@@ -104,63 +110,108 @@ function render() {
   $("#progTxt").textContent = `${g.toLocaleString("es")} de ${t.toLocaleString("es")} · ${(n => `${n} ${n === 1 ? "artículo" : "artículos"}`)(CAT.items.filter(i => have(i) > 0).length)}`;
 
   const nav = $("#cats"); nav.textContent = "";
-  [{ id: "all", name: "Todo" }, ...CAT.categories].forEach(c => {
+  [{ id: "all", name: "Inicio" }, ...CAT.categories].forEach(c => {
     const [cg, ct] = sum(c.id === "all" ? CAT.items : CAT.items.filter(i => i.cat === c.id));
-    const b = document.createElement("button"); b.type = "button"; b.className = "chip";
+    const b = el("button", "chip"); b.type = "button";
     b.setAttribute("aria-pressed", ui.cat === c.id);
-    b.innerHTML = `${esc(c.name)} <span class="n">${cg}/${ct}</span>`;
-    b.onclick = () => { ui.cat = c.id; saveUI(); render(); window.scrollTo({ top: 0 }) };
+    b.innerHTML = `${esc(c.name)}${c.id === "all" ? "" : ` <span class="n">${cg}/${ct}</span>`}`;
+    b.onclick = () => selectCat(c.id);
     nav.appendChild(b);
   });
   document.querySelectorAll("[data-own]").forEach(b => b.setAttribute("aria-pressed", b.dataset.own === ui.own));
   $("#rar").value = ui.rar; $("#sort").value = ui.sort;
 
-  const list = visible();
   const main = $("#main"); main.textContent = "";
+  if (browsing()) { main.appendChild(overview()); return }
+
+  const list = visible();
   if (!list.length) { main.innerHTML = `<p class="empty">Nada coincide${query ? ` con “${esc(query)}”` : ""}. Prueba con menos filtros.</p>`; return }
 
   if (ui.sort !== "cat") {
     const sorted = [...list].sort(ui.sort === "az" ? (a, b) => a.name.localeCompare(b.name, "es") : (a, b) => RANK[b.rarity] - RANK[a.rarity] || a.name.localeCompare(b.name, "es"));
     const sec = el("section", "cat");
     sec.innerHTML = `<div class="cat-h"><h2>${ui.sort === "az" ? "A–Z" : "Más raros primero"}</h2><span class="count">${sorted.length} resultados</span></div>`;
-    sec.appendChild(grid(sorted, true)); main.appendChild(sec); return;
+    sec.appendChild(grid(sorted, "full")); main.appendChild(sec); return;
   }
   for (const c of CAT.categories) {
     const inCat = list.filter(i => i.cat === c.id); if (!inCat.length) continue;
     const [cg, ct] = sum(CAT.items.filter(i => i.cat === c.id));
-    const sec = el("section", "cat");
+    const sec = el("section", "cat"); sec.id = "cat-" + c.id;
     sec.innerHTML = `<div class="cat-h"><h2>${esc(c.name)}</h2><span class="count">${query ? `${inCat.length} resultados` : `${cg} / ${ct}`}</span></div>${query ? "" : `<p class="cat-note">${esc(c.note)}</p>`}`;
-    if (query) { sec.appendChild(grid(inCat, true)); main.appendChild(sec); continue }
-    for (const gr of c.groups) {
-      const items = inCat.filter(i => i.group === gr.name); if (!items.length) continue;
+    if (query) { sec.appendChild(grid(inCat, "group")); main.appendChild(sec); continue }
+    const groups = c.groups.filter(gr => inCat.some(i => i.group === gr.name));
+    if (groups.length > 1) {
+      const jump = el("nav", "jump"); jump.setAttribute("aria-label", `Ir a una serie de ${c.name}`);
+      groups.forEach(gr => {
+        const [gg, gt] = sum(CAT.items.filter(i => i.cat === c.id && i.group === gr.name));
+        const a = el("a"); a.href = "#"; a.className = gg === gt ? "done" : "";
+        a.innerHTML = `${esc(shortGroup(gr.name))} <span>${gg}/${gt}</span>`;
+        a.onclick = e => { e.preventDefault(); const t = document.getElementById(gid(c.id, gr.name)); if (!t) return;
+          window.scrollTo({ top: t.getBoundingClientRect().top + scrollY - $(".top").offsetHeight - 10, behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" }) };
+        jump.appendChild(a);
+      });
+      sec.appendChild(jump);
+    }
+    for (const gr of groups) {
+      const items = inCat.filter(i => i.group === gr.name);
       const [gg, gt] = sum(CAT.items.filter(i => i.cat === c.id && i.group === gr.name));
-      const g = el("div", "grp");
-      g.innerHTML = `<div class="grp-h"><h3>${esc(gr.name)}</h3><span class="count">${gg}/${gt}${gg === gt ? ' <span class="bingo">· Bingo</span>' : ""}</span></div>${gr.note && !query ? `<p class="grp-note">${esc(gr.note)}</p>` : ""}`;
-      g.appendChild(grid(items, false)); sec.appendChild(g);
+      const g = el("div", "grp"); g.id = gid(c.id, gr.name);
+      g.innerHTML = `<div class="grp-h"><h3>${esc(gr.name)}</h3><span class="count">${gg}/${gt}${gg === gt ? ' <span class="bingo">· Bingo</span>' : ""}</span></div>${gr.note ? `<p class="grp-note">${esc(gr.note)}</p>` : ""}`;
+      g.appendChild(grid(items, "badge")); sec.appendChild(g);
     }
     main.appendChild(sec);
   }
 }
+const gid = (c, g) => "g-" + c + "-" + norm(g).replace(/ /g, "-");
+function selectCat(id) { ui.cat = id; saveUI(); render(); window.scrollTo({ top: 0 }) }
+
+function overview() {
+  const wrap = el("section", "ov");
+  wrap.innerHTML = `<p class="ov-lede">${CAT.items.length} artículos en ${CAT.categories.length} categorías. Elige una para ver sus series, o busca arriba.</p>`;
+  const grid = el("div", "ov-grid");
+  for (const c of CAT.categories) {
+    const its = CAT.items.filter(i => i.cat === c.id), [cg, ct] = sum(its);
+    const pics = its.filter(i => i.img).filter((_, k, a) => k % Math.max(1, Math.floor(a.length / 4)) === 0).slice(0, 4);
+    const b = el("button", "ov-card"); b.type = "button";
+    b.innerHTML = `<div class="ov-pics">${pics.map(p => `<img loading="lazy" alt="" src="${esc(sized(p.img, 160))}">`).join("") || `<span class="ph-txt">${esc(c.name)}</span>`}</div>
+      <div class="ov-info"><strong>${esc(c.name)}</strong><span>${its.length} artículos · ${c.groups.length} ${c.groups.length === 1 ? "grupo" : "grupos"}</span>
+      <div class="mini"><i style="width:${ct ? cg / ct * 100 : 0}%"></i></div><span class="count">${cg} / ${ct}</span></div>`;
+    b.querySelectorAll("img").forEach(i => i.onerror = () => i.remove());
+    b.onclick = () => selectCat(c.id);
+    grid.appendChild(b);
+  }
+  wrap.appendChild(grid);
+  return wrap;
+}
 function el(tag, cls) { const e = document.createElement(tag); if (cls) e.className = cls; return e }
 function rarColor(r) { return `var(--r-${r})` }
-function grid(items, showGroup) {
+function grid(items, mode) {
   const g = el("div", "grid");
-  for (const it of items) g.appendChild(card(it, showGroup));
+  for (const it of items) g.appendChild(card(it, mode));
   return g;
 }
-function card(it, showGroup) {
+function placeholder(it) {
+  const col = colorOf(it);
+  const span = el("span", "ph-card");
+  span.innerHTML = `${col ? `<i class="swatch" style="background:${col}"></i>` : ""}<b>${esc(catName(it.cat))}</b><small>${esc(it.group)}</small><em>Sin foto en las fuentes</em>`;
+  return span;
+}
+function card(it, mode) {
   const h = have(it), c = el("article", "card" + (complete(it) ? " have" : ""));
   c.style.setProperty("--rc", rarColor(it.rarity));
   const src = LOCAL_PHOTOS.has(it.id) ? null : (REPO_PHOTOS[it.id] || (it.img && sized(it.img, 320)));
+  const sub = mode === "full" ? `${catName(it.cat)} · ${it.group}` : mode === "group" ? it.group : (it.note || "");
   c.innerHTML = `<a class="open" href="#/item/${encodeURIComponent(it.id)}" aria-label="${esc(it.name)}, ${esc(it.group)}. Ver ficha">
-    <div class="thumb">${src ? `<img loading="lazy" decoding="async" alt="" src="${esc(src)}">` : `<span class="ph">${LOCAL_PHOTOS.has(it.id) ? "" : esc(it.name.slice(0, 1))}</span>`}</div>
-    <div class="info"><span class="nm">${esc(it.name)}</span><span class="sub">${esc(showGroup ? (ui.sort === "cat" ? it.group : `${catName(it.cat)} · ${it.group}`) : (it.note || ""))}</span>
+    <div class="thumb">${src ? `<img loading="lazy" decoding="async" alt="" src="${esc(src)}">` : ""}<span class="tag">${esc(shortGroup(it.group))}</span></div>
+    <div class="info"><span class="nm">${esc(it.name)}</span>${sub ? `<span class="sub">${esc(sub)}</span>` : ""}
     ${it.total ? `<div class="mini"><i style="width:${h / it.total * 100}%"></i></div>` : ""}
     <span class="rk">${esc(CAT.rarity[it.rarity].label)}</span></div></a>`;
-  if (LOCAL_PHOTOS.has(it.id)) idb.get(it.id).then(b => { if (b) { const i = new Image(); i.alt = ""; i.src = URL.createObjectURL(b); $(".thumb", c).replaceChildren(i) } });
+  const thumb = $(".thumb", c);
+  if (!src && !LOCAL_PHOTOS.has(it.id)) thumb.prepend(placeholder(it));
+  if (LOCAL_PHOTOS.has(it.id)) idb.get(it.id).then(b => { if (b) { const i = new Image(); i.alt = ""; i.src = URL.createObjectURL(b); thumb.prepend(i) } });
   $(".open", c).addEventListener("click", () => { fromList = true });
   const img = $(".thumb img", c);
-  if (img && !REPO_PHOTOS[it.id]) withRetry(img, it.img, () => img.replaceWith(Object.assign(el("span", "ph"), { textContent: it.name.slice(0, 1) })));
+  if (img && !REPO_PHOTOS[it.id]) withRetry(img, it.img, () => img.replaceWith(placeholder(it)));
   if (it.total) {
     const ctr = el("div", "ctr");
     ctr.innerHTML = `<button type="button" aria-label="Quitar uno de ${esc(it.name)}">−</button><output>${h}/${it.total}</output><button type="button" aria-label="Sumar uno a ${esc(it.name)}">+</button>`;
@@ -218,8 +269,8 @@ async function drawSheet() {
   bg.innerHTML = `<div class="sheet" role="dialog" aria-modal="true" aria-labelledby="sh-t" style="--rc:${rarColor(it.rarity)}">
     <div class="sh-top"><div><div class="crumb">${esc(cat.name)} · ${esc(it.group)}</div><h2 id="sh-t">${esc(it.name)}</h2></div><button class="x" type="button" aria-label="Cerrar ficha">✕</button></div>
     ${mine && it.img ? `<div class="photo-tabs" role="group" aria-label="Foto"><button type="button" data-v="mine" aria-pressed="${view === "mine"}">Mi foto</button><button type="button" data-v="cat" aria-pressed="${view === "cat"}">Catálogo</button></div>` : ""}
-    <div class="photo">${srcImg ? `<img alt="${esc(it.name)}" src="${esc(srcImg)}">` : `<div class="ph">Aún no hay foto de esta pieza.<br>Mira ventas reales en eBay o agrega la tuya abajo.</div>`}</div>
-    ${view === "cat" && it.img ? `<div class="credit">Foto: <a href="${esc(it.imgSrc)}" target="_blank" rel="noopener">That Penguin Game</a>${it.imgShared ? ` · Es la misma foto que ${esc(it.imgShared.join(", "))}: el relanzamiento es idéntico y solo cambia la etiqueta o la moneda.` : ""}</div>` : ""}
+    <div class="photo">${srcImg ? `<img alt="${esc(it.name)}" src="${esc(srcImg)}">` : `<div class="ph">No encontré una foto de esta pieza en las fuentes.<br>Mira ventas reales en eBay o agrega la tuya abajo.</div>`}</div>
+    ${view === "cat" && it.img ? `<div class="credit">Foto: <a href="${esc(it.imgSrc)}" target="_blank" rel="noopener">${esc(it.imgBy || "That Penguin Game")}</a>${it.imgShared ? ` · Es la misma foto que ${esc(it.imgShared.join(", "))}: el relanzamiento es idéntico y solo cambia la etiqueta o la moneda.` : ""}</div>` : ""}
     ${it.desc ? `<p>${esc(it.desc)}</p>` : ""}
     ${it.note ? `<p><b>${esc(it.note)}.</b></p>` : ""}
     <dl class="facts">
@@ -319,6 +370,8 @@ async function init() {
     BY_ID.set(it.id, it);
   }
   try { LOCAL_PHOTOS = new Set(await idb.keys()) } catch {}
+  const setTopH = () => document.documentElement.style.setProperty("--top-h", $(".top").offsetHeight + "px");
+  setTopH(); addEventListener("resize", setTopH);
   render(); route();
 
   let qt; $("#q").addEventListener("input", e => { clearTimeout(qt); qt = setTimeout(() => { query = e.target.value; render() }, 120) });

@@ -1,6 +1,6 @@
 # Iglú de Colección
 
-Catálogo y tracker personal del merch oficial de Club Penguin (2008–2013): peluches, puffles, figuras Mix 'N Match, cartas Card-Jitsu, pines, libros, revistas, tarjetas de membresía, videojuegos y más. 550 artículos con rareza estimada, descripción, guía para saber si es original y enlaces a ventas reales en eBay.
+Catálogo y tracker personal del merch oficial de Club Penguin (2008–2013): peluches, puffles, figuras Mix 'N Match, cartas Card-Jitsu, pines, libros, revistas, tarjetas de membresía, videojuegos y más. 593 artículos con rareza estimada, descripción, guía para saber si es original y enlaces a ventas reales en eBay.
 
 Es una app web instalable (PWA): funciona sin conexión una vez abierta y se puede agregar a la pantalla de inicio del celular.
 
@@ -30,7 +30,7 @@ Hay dos formas:
 
 - `data/catalog.json` es el catálogo completo. Cada artículo tiene `id`, `cat`, `group`, `name`, `rarity` (`c` común, `p` poco común, `r` raro, `m` muy raro, `x` inconseguible), `desc` y, si la hay, `img`.
 - No cambies los `id` de artículos existentes: el progreso guardado depende de ellos.
-- Las listas de Mix 'N Match series 6, 9 y 11 y los llaveros de puffle están incompletas en las fuentes.
+- Los pines no tienen fotos en ninguna fuente accesible; aparecen como tarjetas con su nombre y serie hasta que agregues las tuyas.
 
 ## Publicar en GitHub Pages
 
@@ -38,6 +38,6 @@ Settings → Pages → Source: *Deploy from a branch* → rama `main`, carpeta `
 
 ## Créditos
 
-Las fotos del catálogo se muestran enlazadas desde [That Penguin Game](https://thatpenguingame.com/club-penguin-toys/) y siguen siendo de sus autores; no se copian a este repo. Listas cruzadas con el [Club Penguin Wiki](https://clubpenguin.fandom.com/) y fichas de ToyWiz.
+Las fotos del catálogo se muestran enlazadas desde [That Penguin Game](https://thatpenguingame.com/club-penguin-toys/) y [ToyWiz](https://toywiz.com/club-penguin/) y siguen siendo de sus autores; no se copian a este repo. Listas cruzadas con el [Club Penguin Wiki](https://clubpenguin.fandom.com/) y fichas de ToyWiz.
 
 Club Penguin es una marca de Disney. Proyecto de fans, sin fines comerciales.
